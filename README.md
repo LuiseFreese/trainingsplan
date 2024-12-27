@@ -2,12 +2,12 @@
 
 ## Overview
 
-This application reads an Excel file containing a training plan and generates an ICS file that can be imported into a calendar application. The ICS file includes events for each training session with the specified date, title, and description.
+This application reads HTML files containing a training plan and generates an ICS file that can be imported into a calendar application. The ICS file includes events for each training session with the specified date, title, and description.
 
 ## How It Works
 
-1. The application uses the `xlsx` library to read the Excel file located in the `assets` folder.
-2. The data from the Excel file is parsed to extract the dates, titles, and descriptions of the training sessions.
+1. The application uses the `cheerio` library to read and parse the HTML files located in the `assets` folder.
+2. The data from the HTML files is parsed to extract the dates, titles, and descriptions of the training sessions.
 3. The `ics` library is used to create an ICS file with events for each training session.
 4. The application uses `express` to create a server that provides an endpoint to download the generated ICS file.
 
@@ -26,7 +26,7 @@ This application reads an Excel file containing a training plan and generates an
 npm install
 ```
 
-3. Place your Excel file (`trainingsplan_test.xlsx`) in the assets folder.
+3. Place your HTML files (e.g., `–Woche 1– — KRAFT Runners.html`) in the assets folder.
 4. Start the server
 
 ```powershell
@@ -42,7 +42,7 @@ You experience the minimal lovable version 💖
 
 ### Current Features
 
-* Read training plan from an Excel file
+* Read training plan from HTML files
 * Generate an ICS file with events for each training session
 * Serve the ICS file via an HTTP endpoint
 
