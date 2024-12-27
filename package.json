@@ -1,0 +1,17 @@
+{
+  "name": "trainingsplan",
+  "version": "1.0.0",
+  "description": "A simple Node.js application to generate ICS files from an Excel trainingsplan.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "xlsx": "^0.17.0",
+    "ics": "^2.27.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
