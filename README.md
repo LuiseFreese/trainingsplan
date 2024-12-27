@@ -6,16 +6,16 @@ This application reads HTML files containing a training plan and generates an IC
 
 ## How It Works
 
-1. The application uses the `cheerio` library to read and parse the HTML files located in the `assets` folder.
-2. The data from the HTML files is parsed to extract the dates, titles, and descriptions of the training sessions.
-3. The `ics` library is used to create an ICS file with events for each training session.
-4. The application uses `express` to create a server that provides an endpoint to download the generated ICS file.
+1. The application uses the `cheerio` library to read and parse the HTML files located in the `assets` folder
+2. The data from the HTML files is parsed to extract the dates, titles, and descriptions of the training sessions
+3. The `ics` library is used to create an ICS file with events for each training session
+4. The application uses `express` to create a server that provides an endpoint to download the generated ICS file
 
 ## Installation
 
 1. Clone the repository
 
-   ```sh
+```sh
    git clone https://github.com/yourusername/trainingsplan.git
    cd trainingsplan
 ```
