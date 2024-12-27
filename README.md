@@ -6,10 +6,10 @@ This application reads an Excel file containing a training plan and generates an
 
 ## How It Works
 
-1. **Reading the Excel File**: The application uses the `xlsx` library to read the Excel file located in the `assets` folder.
-2. **Parsing the Data**: The data from the Excel file is parsed to extract the dates, titles, and descriptions of the training sessions.
-3. **Generating ICS File**: The `ics` library is used to create an ICS file with events for each training session.
-4. **Serving the ICS File**: The application uses `express` to create a server that provides an endpoint to download the generated ICS file.
+1. The application uses the `xlsx` library to read the Excel file located in the `assets` folder.
+2. The data from the Excel file is parsed to extract the dates, titles, and descriptions of the training sessions.
+3. The `ics` library is used to create an ICS file with events for each training session.
+4. The application uses `express` to create a server that provides an endpoint to download the generated ICS file.
 
 ## Installation
 
