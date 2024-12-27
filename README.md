@@ -16,7 +16,7 @@ This application reads HTML files containing a training plan and generates an IC
 1. Clone the repository
 
 ```sh
-   git clone https://github.com/yourusername/trainingsplan.git
+   git clone https://github.com/luisefreese/trainingsplan.git
    cd trainingsplan
 ```
 
