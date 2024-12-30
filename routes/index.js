@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { generateICS } = require('../src/services/icsService'); // Corrected path
+const { generateICS } = require('../src/services/icsService'); 
 
 router.get('/generate-ics', async (req, res) => {
     try {

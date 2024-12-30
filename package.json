@@ -1,19 +1,14 @@
 {
-  "name": "trainingsplan",
+  "name": "trainingsplan-app-v2",
   "version": "1.0.0",
-  "description": "A simple Node.js application to generate ICS files from an Excel trainingsplan.",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js"
   },
   "dependencies": {
-    "cheerio": "^1.0.0",
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.1",
-    "ics": "^2.27.0",
-    "pdf-parse": "^1.1.1",
-    "xlsx": "^0.17.5"
-  },
-  "author": "",
-  "license": "ISC"
+    "ics": "^2.29.0"
+  }
 }
