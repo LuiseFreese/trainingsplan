@@ -1,999 +1,951 @@
 {
-  "Base Building Phase": [
+  "BASE": [
     {
       "weekNumber": 1,
-      "weekKM": 30,
+      "weekKM": 10,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 6.0 km at 7:10 min/km.",
+          "description": "Run 2 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Increase your lactate threshold and improve your race pace"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 6 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 4 km",
+            "Sharpen your speed and agility"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Improve your mobility and recovery"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 20.4 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 2,
-      "weekKM": 33,
+      "weekKM": 11,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 6.6 km at 7:10 min/km.",
+          "description": "Run 2 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Challenge yourself with this tempo run to enhance your speed"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 8 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 6 km",
+            "Enhance your performance and break through your speed barriers"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Focus on stretching and relaxation to aid your recovery"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 22.4 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 3,
-      "weekKM": 36,
+      "weekKM": 12,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 7.2 km at 7:10 min/km.",
+          "description": "Run 2 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Boost your speed endurance and get comfortable with faster paces"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 10 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 10 km",
+            "Improve your speed and running economy"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Enhance your flexibility and prevent injuries"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 24.5 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 4,
-      "weekKM": 24,
+      "weekKM": 13,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 4.8 km at 7:10 min/km.",
+          "description": "Run 3 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Increase your lactate threshold and improve your race pace"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 4 intervals of 0.4 km at 5:30 min/km pace. Each interval is followed by 2:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 2 km",
+            "Sharpen your speed and agility"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Improve your mobility and recovery"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 16.3 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         }
       ]
     }
   ],
-  "Build Phase": [
+  "BUILD": [
     {
       "weekNumber": 5,
-      "weekKM": 30,
+      "weekKM": 21,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 6.0 km at 7:10 min/km.",
+          "description": "Run 4 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Challenge yourself with this tempo run to enhance your speed"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 6 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 4 km",
+            "Enhance your performance and break through your speed barriers"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Focus on stretching and relaxation to aid your recovery"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 20.4 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 6,
-      "weekKM": 33,
+      "weekKM": 23,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 6.6 km at 7:10 min/km.",
+          "description": "Run 5 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Boost your speed endurance and get comfortable with faster paces"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 8 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 6 km",
+            "Improve your speed and running economy"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Enhance your flexibility and prevent injuries"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 22.4 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 7,
-      "weekKM": 36,
+      "weekKM": 24,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 7.2 km at 7:10 min/km.",
+          "description": "Run 5 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Increase your lactate threshold and improve your race pace"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 10 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 10 km",
+            "Sharpen your speed and agility"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Improve your mobility and recovery"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 24.5 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 8,
-      "weekKM": 24,
+      "weekKM": 26,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 4.8 km at 7:10 min/km.",
+          "description": "Run 5 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Challenge yourself with this tempo run to enhance your speed"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 4 intervals of 0.4 km at 5:30 min/km pace. Each interval is followed by 2:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 2 km",
+            "Enhance your performance and break through your speed barriers"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Focus on stretching and relaxation to aid your recovery"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 16.3 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
         }
       ]
-    }
-  ],
-  "Peak Phase": [
+    },
     {
       "weekNumber": 9,
-      "weekKM": 30,
+      "weekKM": 27,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 6.0 km at 7:10 min/km.",
+          "description": "Run 5 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Boost your speed endurance and get comfortable with faster paces"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 6 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 4 km",
+            "Improve your speed and running economy"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Enhance your flexibility and prevent injuries"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 20.4 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 10,
-      "weekKM": 33,
+      "weekKM": 29,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 6.6 km at 7:10 min/km.",
+          "description": "Run 6 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Increase your lactate threshold and improve your race pace"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 8 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 6 km",
+            "Sharpen your speed and agility"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Improve your mobility and recovery"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 22.4 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 11,
-      "weekKM": 36,
+      "weekKM": 30,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 7.2 km at 7:10 min/km.",
+          "description": "Run 6 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Challenge yourself with this tempo run to enhance your speed"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 10 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 10 km",
+            "Enhance your performance and break through your speed barriers"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Focus on stretching and relaxation to aid your recovery"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 24.5 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 12,
-      "weekKM": 24,
+      "weekKM": 32,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 4.8 km at 7:10 min/km.",
+          "description": "Run 6 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Boost your speed endurance and get comfortable with faster paces"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 4 intervals of 0.4 km at 5:30 min/km pace. Each interval is followed by 2:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 2 km",
+            "Improve your speed and running economy"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Enhance your flexibility and prevent injuries"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 16.3 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
         }
       ]
     }
   ],
-  "Taper Phase": [
+  "PEAK": [
     {
       "weekNumber": 13,
-      "weekKM": 30,
+      "weekKM": 44,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 6.0 km at 7:10 min/km.",
+          "description": "Run 9 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Increase your lactate threshold and improve your race pace"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 6 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 4 km",
+            "Sharpen your speed and agility"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Improve your mobility and recovery"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 20.4 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 14,
-      "weekKM": 33,
+      "weekKM": 46,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 6.6 km at 7:10 min/km.",
+          "description": "Run 9 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Challenge yourself with this tempo run to enhance your speed"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 8 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 6 km",
+            "Enhance your performance and break through your speed barriers"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Focus on stretching and relaxation to aid your recovery"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 22.4 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         }
       ]
     },
     {
       "weekNumber": 15,
-      "weekKM": 36,
+      "weekKM": 48,
       "days": [
         {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
+        },
+        {
           "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 2,
+          "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 7.2 km at 7:10 min/km.",
+          "description": "Run 10 km at 6:00 min/km pace",
           "options": [
-            "Purpose: Build speed and stamina"
+            "Boost your speed endurance and get comfortable with faster paces"
           ]
         },
         {
           "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         },
         {
           "day": 4,
+          "label": "Friday",
           "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
+          "description": "Run 10 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
           "options": [
-            "Purpose: Improve speed and endurance"
+            "Total distance: 10 km",
+            "Improve your speed and running economy"
           ]
         },
         {
           "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Purpose: Recovery"
+            "Enhance your flexibility and prevent injuries"
           ]
         },
         {
           "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 7,
-          "title": "Long Run",
-          "description": "Run 24.5 km at 8:20 min/km.",
-          "options": [
-            "Purpose: Build endurance"
-          ]
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
         }
       ]
-    },
+    }
+  ],
+  "TAPER": [
     {
       "weekNumber": 16,
-      "weekKM": 42.2,
+      "weekKM": 25,
       "days": [
         {
-          "day": 1,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 2,
-          "title": "Tempo Run",
-          "description": "Run 4.8 km at 7:10 min/km.",
-          "options": [
-            "Purpose: Build speed and stamina"
-          ]
-        },
-        {
-          "day": 3,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 4,
-          "title": "Intervals",
-          "description": "Do intervals: 5x 800m at 7:10 min/km with 400m recovery.",
-          "options": [
-            "Purpose: Improve speed and endurance"
-          ]
-        },
-        {
-          "day": 5,
-          "title": "Rest or Yoga",
-          "description": "Focus on recovery and mobility exercises.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
-          "day": 6,
-          "title": "Rest",
-          "description": "Take it easy today.",
-          "options": [
-            "Purpose: Recovery"
-          ]
-        },
-        {
           "day": 7,
-          "title": "Race Day",
-          "description": "Run the marathon! 42.2 km",
+          "title": "Marathon",
+          "description": "Run 42.195 km at your marathon pace",
           "options": [
-            "Purpose: Complete the marathon"
+            "This is it! Give it your all and enjoy the race"
           ]
         }
       ]

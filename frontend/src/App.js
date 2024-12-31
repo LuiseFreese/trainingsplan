@@ -13,29 +13,27 @@ import WeekendIcon from '@mui/icons-material/Weekend';
 const fitnessLevels = ['beginner', 'intermediate', 'advanced'];
 const targetTimes = ['4:00', '4:30', '5:00'];
 const daysOfWeek = [
-  { label: 'Monday', value: 1 },
-  { label: 'Tuesday', value: 2 },
-  { label: 'Wednesday', value: 3 },
-  { label: 'Thursday', value: 4 },
-  { label: 'Friday', value: 5 },
-  { label: 'Saturday', value: 6 },
-  { label: 'Sunday', value: 7 },
+  { label: 'Monday', value: 0 },
+  { label: 'Tuesday', value: 1 },
+  { label: 'Wednesday', value: 2 },
+  { label: 'Thursday', value: 3 },
+  { label: 'Friday', value: 4 },
+  { label: 'Saturday', value: 5 },
+  { label: 'Sunday', value: 6 },
 ];
 
 const icons = {
-  Rest: <WeekendIcon />,
+  'Rest Day': <WeekendIcon />,
   'Long Run': <DirectionsRunIcon />,
   Intervals: <RepeatIcon />,
   'Tempo Run': <DirectionsRunIcon />,
   Yoga: <SelfImprovementIcon />,
-  'Rest or Yoga': <SelfImprovementIcon />,
-  'Rest or Mobility': <SelfImprovementIcon />,
   'Easy Run': <DirectionsWalkIcon />,
 };
 
 function App() {
-  const [fitnessLevel, setFitnessLevel] = useState('intermediate');
-  const [targetTime, setTargetTime] = useState('4:30');
+  const [fitnessLevel, setFitnessLevel] = useState('beginner');
+  const [targetTime, setTargetTime] = useState('5:00');
   const [trainingDays, setTrainingDays] = useState([2, 4, 5, 7]);
   const [startDate, setStartDate] = useState(new Date());
   const [plan, setPlan] = useState(null);
@@ -143,7 +141,7 @@ function App() {
                               <Card style={{ height: '100%', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1)' }}>
                                 <CardContent>
                                   <Typography variant="h6">
-                                    {daysOfWeek.find((d) => d.value === day.day).label}
+                                    {day.label}
                                   </Typography>
                                   <Typography variant="body1">
                                     {icons[day.title] || icons['Easy Run']} {day.title}

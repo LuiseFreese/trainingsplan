@@ -8,7 +8,7 @@ const generateJSON = async (trainingPlanFolder) => {
         const weeks = await parseHTML(trainingPlanFolder);
         console.log('HTML parsing completed. Data:', JSON.stringify(weeks, null, 2));
 
-        const outputDir = path.join(__dirname, `../../assets/output`);
+        const outputDir = path.join(__dirname, `../../../frontend/output`);
         if (!fs.existsSync(outputDir)) {
             fs.mkdirSync(outputDir, { recursive: true });
         }

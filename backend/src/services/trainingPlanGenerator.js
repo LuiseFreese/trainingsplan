@@ -1,183 +1,206 @@
-// Marathon Training Plan Generator
+const generateTrainingPlan = (targetTime, fitnessLevel, trainingDays) => {
+  const totalWeeks = 16;
+  const marathonDistance = 42.195; // Marathon distance in kilometers
 
-function generateTrainingPlan(targetTime, fitnessLevel, trainingDays) {
-  const basePaces = {
-    "4:00": {
-      easy: "6:40 min/km",
-      tempo: "5:50 min/km",
-      longRun: "7:00 min/km",
-    },
-    "4:30": {
-      easy: "7:20 min/km",
-      tempo: "6:20 min/km",
-      longRun: "7:40 min/km",
-    },
-    "5:00": {
-      easy: "8:00 min/km",
-      tempo: "7:10 min/km",
-      longRun: "8:20 min/km",
-    },
+  const FITNESS_LEVELS = {
+    beginner: { initialWeeklyKM: 20, peakWeeklyKM: 50, intervalRest: '2:00 min', intervalDistance: 0.4 },
+    intermediate: { initialWeeklyKM: 30, peakWeeklyKM: 70, intervalRest: '1:30 min', intervalDistance: 0.6 },
+    advanced: { initialWeeklyKM: 40, peakWeeklyKM: 90, intervalRest: '1:00 min', intervalDistance: 1.0 },
   };
 
-  const baseDistances = {
-    beginner: 20,
-    intermediate: 30,
-    advanced: 40,
+  const TARGET_PACES = {
+    '4:00': { easy: '6:00 min/km', tempo: '5:00 min/km', interval: ['4:30 min/km', '4:45 min/km'], long: '6:30 min/km' },
+    '4:30': { easy: '6:30 min/km', tempo: '5:30 min/km', interval: ['5:00 min/km', '5:15 min/km'], long: '7:00 min/km' },
+    '5:00': { easy: '7:00 min/km', tempo: '6:00 min/km', interval: ['5:30 min/km', '5:45 min/km'], long: '7:30 min/km' },
   };
 
-  const progressionWeeks = [
-    { multiplier: 1 },
-    { multiplier: 1.1 },
-    { multiplier: 1.2 },
-    { multiplier: 0.8 }, // Recovery Week
+  const PHASES = {
+    BASE: { weeks: 4, mileageFactor: 0.5, speedFactor: 0.5 },
+    BUILD: { weeks: 8, mileageFactor: 0.75, speedFactor: 0.75 },
+    PEAK: { weeks: 3, mileageFactor: 1, speedFactor: 1 },
+    TAPER: { weeks: 1, mileageFactor: 0.5, speedFactor: 0.5 },
+  };
+
+  // const ICONS = {
+  //   Rest: 'WeekendIcon',
+  //   'Long Run': 'DirectionsRunIcon',
+  //   Intervals: 'RepeatIcon',
+  //   'Tempo Run': 'DirectionsRunIcon',
+  //   Yoga: 'SelfImprovementIcon',
+  //   'Easy Run': 'DirectionsRunIcon',
+  // };
+
+  const fitness = FITNESS_LEVELS[fitnessLevel];
+  const paces = TARGET_PACES[targetTime];
+
+  const plan = {
+    BASE: [],
+    BUILD: [],
+    PEAK: [],
+    TAPER: [],
+  };
+  let currentWeeklyKM = fitness.initialWeeklyKM;
+
+  const getPhase = (week) => {
+    if (week <= PHASES.BASE.weeks) return 'BASE';
+    if (week <= PHASES.BASE.weeks + PHASES.BUILD.weeks) return 'BUILD';
+    if (week <= PHASES.BASE.weeks + PHASES.BUILD.weeks + PHASES.PEAK.weeks) return 'PEAK';
+    return 'TAPER';
+  };
+
+  const calculateLongRunDistance = (week, phase) => {
+    if (phase === 'BASE') {
+      return 5 + Math.floor((week / PHASES.BASE.weeks) * 5); // Increase from 5 to 10 km
+    } else if (phase === 'BUILD') {
+      const buildWeek = week - PHASES.BASE.weeks;
+      return 12 + Math.floor(((buildWeek - 1) / (PHASES.BUILD.weeks - 1)) * 13); // Increase from 12 to 25 km
+    } else if (phase === 'PEAK') {
+      const peakWeek = week - PHASES.BASE.weeks - PHASES.BUILD.weeks;
+      if (peakWeek === 1) return 28;
+      if (peakWeek === 2) return 32;
+      if (peakWeek === 3) return 36;
+    }
+    return 0;
+  };
+
+  const intervalTemplates = [
+    { intervals: 4, distance: 0.4, rest: '2:00 min', restType: 'easy pace' },
+    { intervals: 6, distance: 0.6, rest: '1:30 min', restType: 'easy pace' },
+    { intervals: 8, distance: 0.8, rest: '1:00 min', restType: 'easy pace' },
+    { intervals: 10, distance: 1.0, rest: '1:00 min', restType: 'easy pace' },
   ];
 
-  const daysTemplate = [
-    { type: "rest", title: "Rest or Mobility" },
-    { type: "tempo", title: "Tempo Run" },
-    { type: "easy", title: "Easy Run" },
-    { type: "intervals", title: "Intervals" },
-    { type: "rest", title: "Rest or Yoga" },
-    { type: "easy", title: "Easy Run" },
-    { type: "long", title: "Long Run" },
+  const longRunPhrases = [
+    "Build your endurance and practice your nutrition and hydration strategy",
+    "Strengthen your stamina and get used to longer distances",
+    "Push your limits and prepare for race day with this long run"
   ];
 
-  const paces = basePaces[targetTime];
-  const baseDistance = baseDistances[fitnessLevel];
+  const tempoRunPhrases = [
+    "Boost your speed endurance and get comfortable with faster paces",
+    "Increase your lactate threshold and improve your race pace",
+    "Challenge yourself with this tempo run to enhance your speed"
+  ];
 
-  function getWeeklyPlan(weekNumber) {
-    const phase = getPhase(weekNumber);
-    const progression = progressionWeeks[weekNumber % progressionWeeks.length].multiplier;
-    const weeklyDistance = Math.round(baseDistance * progression);
+  const intervalPhrases = [
+    "Improve your speed and running economy",
+    "Sharpen your speed and agility",
+    "Enhance your performance and break through your speed barriers"
+  ];
 
-    const weekPlan = { weekNumber: weekNumber + 1, weekKM: weeklyDistance, days: [] };
-    let remainingDistance = weeklyDistance;
+  const yogaPhrases = [
+    "Enhance your flexibility and prevent injuries",
+    "Improve your mobility and recovery",
+    "Focus on stretching and relaxation to aid your recovery"
+  ];
 
-    daysTemplate.forEach((day, index) => {
-      const dayIndex = index + 1; // Adjust to 1-based index
-      if (!trainingDays.includes(dayIndex)) {
-        weekPlan.days.push({ day: dayIndex, title: "Rest", description: "Take it easy today.", options: ["Purpose: Recovery"] });
-        return;
-      }
+  const easyRunPhrases = [
+    "Recover and prepare for your next hard session",
+    "Take it easy today to let your body recover and rebuild",
+    "Enjoy a relaxed run to help your muscles recover"
+  ];
 
+  const restPhrases = [
+    "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+    "Rest. It's part of the plan.",
+    "Rest. You need it.",
+    "Happy Rest Day",
+   "Rest and recovery don't need to be earned - they are a prerequisite for your performance"
+  ];
+
+  const daysOfWeek = [
+    { label: 'Monday', value: 0 },
+    { label: 'Tuesday', value: 1 },
+    { label: 'Wednesday', value: 2 },
+    { label: 'Thursday', value: 3 },
+    { label: 'Friday', value: 4 },
+    { label: 'Saturday', value: 5 },
+    { label: 'Sunday', value: 6 },
+  ];
+  
+  const assignTrainingDays = (weekPlan, weeklyDistance, phase, week) => {
+    const longRunDistance = calculateLongRunDistance(week, phase);
+    const tempoRunDistance = Math.round(weeklyDistance * 0.2);
+    const intervalTemplate = intervalTemplates[week % intervalTemplates.length];
+    const intervalDistance = Math.round(intervalTemplate.intervals * intervalTemplate.distance);
+    const easyRunDistance = Math.round(weeklyDistance * 0.2);
+  
+    let longRunAssigned = false;
+    let tempoRunAssigned = false;
+    let intervalAssigned = false;
+    let yogaAssigned = false;
+  
+    for (let dayIndex = 0; dayIndex < 7; dayIndex++) {
       let description = "";
       let distance = 0;
       let options = [];
-
-      switch (day.type) {
-        case "rest":
-          description = "Focus on recovery and mobility exercises.";
-          options.push("Purpose: Recovery");
-          break;
-        case "tempo":
-          distance = Math.min(weeklyDistance * 0.2, remainingDistance * 0.2);
-          description = `Run ${distance.toFixed(1)} km at ${paces.tempo}.`;
-          options.push("Purpose: Build speed and stamina");
-          break;
-        case "easy":
-          distance = Math.min(weeklyDistance * 0.1, remainingDistance * 0.1);
-          description = `Run ${distance.toFixed(1)} km at ${paces.easy}.`;
-          options.push("Purpose: Build base mileage and aid recovery");
-          break;
-        case "intervals":
-          distance = Math.min(weeklyDistance * 0.15, remainingDistance * 0.15);
-          description = `Do intervals: 5x 800m at ${paces.tempo} with 400m recovery.`;
-          options.push("Purpose: Improve speed and endurance");
-          break;
-        case "long":
-          distance = remainingDistance;
-          description = `Run ${distance.toFixed(1)} km at ${paces.longRun}.`;
-          options.push("Purpose: Build endurance");
-          break;
-      }
-
-      remainingDistance -= distance;
-      weekPlan.days.push({ day: dayIndex, title: day.title, description, options });
-    });
-
-    return { phase, weekPlan };
-  }
-
-  function getPhase(weekNumber) {
-    if (weekNumber < 4) {
-      return "Base Building Phase";
-    } else if (weekNumber < 8) {
-      return "Build Phase";
-    } else if (weekNumber < 12) {
-      return "Peak Phase";
-    } else {
-      return "Taper Phase";
-    }
-  }
-
-  function generateWeeks(totalWeeks) {
-    const plan = {
-      "Base Building Phase": [],
-      "Build Phase": [],
-      "Peak Phase": [],
-      "Taper Phase": []
-    };
-
-    for (let i = 0; i < totalWeeks - 1; i++) {
-      const { phase, weekPlan } = getWeeklyPlan(i);
-      plan[phase].push(weekPlan);
-    }
-
-    // Add the last week with the marathon race day
-    const lastWeek = {
-      weekNumber: 16,
-      weekKM: 42.2,
-      days: [
-        {
-          day: 1,
-          title: "Rest",
-          description: "Take it easy today.",
-          options: ["Purpose: Recovery"]
-        },
-        {
-          day: 2,
-          title: "Tempo Run",
-          description: `Run 4.8 km at ${paces.tempo}.`,
-          options: ["Purpose: Build speed and stamina"]
-        },
-        {
-          day: 3,
-          title: "Rest",
-          description: "Take it easy today.",
-          options: ["Purpose: Recovery"]
-        },
-        {
-          day: 4,
-          title: "Intervals",
-          description: `Do intervals: 5x 800m at ${paces.tempo} with 400m recovery.`,
-          options: ["Purpose: Improve speed and endurance"]
-        },
-        {
-          day: 5,
-          title: "Rest or Yoga",
-          description: "Focus on recovery and mobility exercises.",
-          options: ["Purpose: Recovery"]
-        },
-        {
-          day: 6,
-          title: "Rest",
-          description: "Take it easy today.",
-          options: ["Purpose: Recovery"]
-        },
-        {
-          day: 7,
-          title: "Race Day",
-          description: "Run the marathon! 42.2 km",
-          options: ["Purpose: Complete the marathon"]
+      let title = "";
+      let label = daysOfWeek[dayIndex].label;
+  
+      if (trainingDays.includes(dayIndex)) {
+        if (!longRunAssigned && (dayIndex === trainingDays[trainingDays.length - 1] || phase === 'TAPER')) {
+          distance = longRunDistance;
+          description = `Run ${distance} km at ${paces.long} pace`;
+          options.push(longRunPhrases[week % longRunPhrases.length]);
+          title = 'Long Run';
+          longRunAssigned = true;
+        } else if (!tempoRunAssigned) {
+          distance = tempoRunDistance;
+          description = `Run ${distance} km at ${paces.tempo} pace`;
+          options.push(tempoRunPhrases[week % tempoRunPhrases.length]);
+          title = 'Tempo Run';
+          tempoRunAssigned = true;
+        } else if (!intervalAssigned) {
+          const intervalPace = paces.interval[week % paces.interval.length];
+          description = `Run ${intervalTemplate.intervals} intervals of ${intervalTemplate.distance} km at ${intervalPace} pace. Each interval is followed by ${intervalTemplate.rest} rest at ${intervalTemplate.restType}`;
+          options.push(`Total distance: ${intervalDistance} km`);
+          options.push(intervalPhrases[week % intervalPhrases.length]);
+          title = 'Intervals';
+          intervalAssigned = true;
+        } else if (!yogaAssigned) {
+          description = "Focus on recovery and mobility exercises";
+          options.push(yogaPhrases[week % yogaPhrases.length]);
+          title = 'Yoga';
+          yogaAssigned = true;
+        } else {
+          distance = easyRunDistance;
+          description = `Run ${distance} km at ${paces.easy} pace`;
+          options.push(easyRunPhrases[week % easyRunPhrases.length]);
+          title = 'Easy Run';
         }
-      ]
-    };
-    plan["Taper Phase"].push(lastWeek);
+      } else {
+        description = restPhrases[week % restPhrases.length];
+        title = 'Rest Day';
+      }
+  
+      weekPlan.days.push({ day: dayIndex, label, title, description, options });
+    }
+  };
 
-    return plan;
+  for (let week = 1; week <= totalWeeks; week++) {
+    const phase = getPhase(week);
+    const weeklyDistance = currentWeeklyKM * PHASES[phase].mileageFactor;
+    const weekPlan = { weekNumber: week, weekKM: Math.round(weeklyDistance), days: [] };
+
+    assignTrainingDays(weekPlan, weeklyDistance, phase, week);
+
+    plan[phase].push(weekPlan);
+
+    if (phase !== 'TAPER') {
+      currentWeeklyKM += (fitness.peakWeeklyKM - fitness.initialWeeklyKM) / (totalWeeks - PHASES.TAPER.weeks);
+    }
   }
 
-  return generateWeeks(16); // Generate a 16-week plan
-}
+  // Add the marathon race in the last week
+  plan['TAPER'][plan['TAPER'].length - 1].days = [{
+    day: trainingDays[trainingDays.length - 1],
+    title: 'Marathon',
+    description: `Run ${marathonDistance} km at your marathon pace`,
+    options: ["This is it! Give it your all and enjoy the race"]
+    // icon: ICONS['Long Run'],
+  }];
+
+  return plan;
+};
 
 module.exports = { generateTrainingPlan };
