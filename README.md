@@ -1,13 +1,15 @@
-# Trainingsplan
+# Training Plan Generator
 
-This application generates ICS and JSON files for a training plan that can be imported into a calendar application. The ICS file includes events for each training session with the specified date, title, and description. The JSON file is for future use cases.
+This application generates a marathon training plan based on the user's target time, fitness level, and preferred training days. The generated plan includes various types of training sessions such as long runs, tempo runs, interval training, easy runs, and rest days. The application also provides an ICS file with events for each training session.
 
-## How It Works
+## Features
 
-1. The application uses the `cheerio` library to read and parse the HTML files located in the `assets` folder
-2. The data from the HTML files is parsed to extract the dates, titles, and descriptions of the training sessions
-3. The `ics` library is used to create an ICS file with events for each training session
-4. The application uses `express` to create a server that provides endpoints to download the generated ICS and JSON files
+1. Generates a 16-week marathon training plan
+2. Customizes the plan based on the user's target time, fitness level, and preferred training days
+3. Includes different types of training sessions: long runs, tempo runs, interval training, easy runs, yoga, and rest days
+
+
+
 
 ## Installation
 
@@ -26,47 +28,98 @@ npm install
 
 ## Running the Project
 
-1. Start the server
+1. Start the backend server
 
 ```sh
+cd backend
 npm start
 ```
 
-2. Access the endpoints to generate and download the ICS and JSON files:
-
-- To generate and download the ICS file for the 5:00 training plan starting on January 1, 2025:
+2. in a new terminal tab start frontend server
 
 ```sh
-http://localhost:3000/api/generate-ics?folder=500&startDate=2025-01-01
+cd frontend
+npm start
 ```
 
-- To generate and download the ICS file for the 4:30 training plan starting on January 1, 2025:
+## Usage
 
-```sh
+* Open the application in your browser at http://localhost:3000
+* Select your fitness level, target time, and preferred training days
+* Select **Generate Plan** to create your customized marathon training plan
 
-http://localhost:3000/api/generate-ics?folder=430&startDate=2025-01-01
-```
+## Training Plan Logic
 
-- To generate and download the JSON file for the 5:00 training plan
+The training plan is generated based on the following logic:
 
-```sh
+### Phases
 
-http://localhost:3000/api/generate-json?folder=500
-```
+The plan is divided into four phases: Base, Build, Peak, and Taper.
 
-- To generate and download the JSON file for the 4:30 training plan
+* Base: 4 weeks, focuses on building a foundation with lower mileage
+* Build: 8 weeks, increases mileage and intensity
+* Peak: 3 weeks, reaches the highest mileage and intensity
+* Taper: 1 week, reduces mileage to allow for recovery before the marathon.
 
-```sh
-http://localhost:3000/api/generate-json?folder=430
-```
+### Training Sessions: Each week includes a variety of training sessions:
 
-## Endpoints
+* Long Runs: Gradually increase in distance, focusing on endurance.
+* Tempo Runs: Run at a challenging but sustainable pace to improve lactate threshold.
+* Interval Training: Short, intense efforts followed by rest periods to improve speed and running economy.
+* Easy Runs: Run at an easy pace to aid recovery and build aerobic capacity.
+* Yoga: Focus on recovery and mobility exercises to enhance flexibility and prevent injuries.
+* Rest Days: Essential for recovery and preventing overtraining.
 
-- **Generate JSON**: `/api/generate-json?folder=<folder>`
-    - `folder`: The training plan folder (`500` for the 5:00 plan, `430` for the 4:30 plan)
+### Paces
 
-- **Generate ICS**: `/api/generate-ics?folder=<folder>&startDate=<startDate>`
-    - `folder`: The training plan folder (`500` for the 5:00 plan, `430` for the 4:30 plan).
-    - `startDate`: The start date for the training plan (default is January 1, 2025).
+The paces for different types of runs are determined based on the user's target time:
 
-By following these steps, you are be able to generate and download both the ICS and JSON files for the specified training plan and start date.
+* Easy Pace: A comfortable pace for easy runs and recovery.
+* Tempo Pace: A challenging but sustainable pace for tempo runs.
+* Interval Pace: A fast pace for interval training.
+* Long Run Pace: A steady pace for long runs.
+* Marathon Pace: The target pace for the marathon race.
+
+### Customization
+
+The plan is customized based on the user's fitness level and preferred training days. The training sessions are assigned to the selected days, ensuring a balanced distribution of different types of runs.
+
+### Last Week Adjustments
+
+In the last week (Taper phase), the plan includes an easy run and a yoga session before the marathon race to ensure the user is well-rested and prepared.
+
+## How It Works
+
+### Libraries Used
+
+* Express: A web framework for Node.js used to create the backend server.
+* React: A JavaScript library for building user interfaces, used for the frontend
+* Material-UI: A React component library for implementing Google's Material Design
+* Date-fns: A library for manipulating dates in JavaScript.
+
+### Key Functions
+
+* generateTrainingPlan: Generates the 16-week marathon training plan based on the user's target time, fitness level, and preferred training days
+* assignTrainingDays: Assigns training sessions to the selected days, ensuring a balanced distribution of different types of runs
+* calculateLongRunDistance: Calculates the distance for long runs based on the current phase of the training plan
+* getPhase: Determines the current phase (Base, Build, Peak, Taper) based on the week number
+
+### How the Application Works
+
+* User Input: The user selects their fitness level, target time, and preferred training days on the frontend.
+* Generate Plan: When the user clicks "Generate Plan", the frontend sends a request to the backend with the selected options.
+* Training Plan Generation: The backend uses the generateTrainingPlan function to create a customized training plan. This function:
+  * Divides the plan into four phases: Base, Build, Peak, and Taper
+  * Assigns different types of training sessions (long runs, tempo runs, interval training, easy runs, yoga, rest days) to the selected days using the assignTrainingDays function
+  * Calculates the distance for long runs using the calculateLongRunDistance function
+  * Ensures that the last week includes an easy run and a yoga session before the marathon race
+* Response: The backend sends the generated training plan back to the frontend
+* Display Plan: The frontend displays the training plan to the user, including the details of each training session
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License.
