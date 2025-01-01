@@ -987,7 +987,7 @@
           "day": 2,
           "label": "Wednesday",
           "title": "Easy Run",
-          "description": "Run 5 km at 7:00 min/km pace",
+          "description": "Run 5 km at 7:00 min/km pace in the conditions/environment of the marathon",
           "options": [
             "Keep it light and easy to stay fresh for the marathon"
           ]
@@ -1007,7 +1007,8 @@
           "description": "Run 42.195 km at your marathon pace",
           "options": [
             "This is it! Give it your all and enjoy the race"
-          ]
+          ],
+          "icon": "EmojiEvents"
         }
       ],
       "phaseDescription": "Ensuring you are healthy, not injured, and well-rested for the start line."
