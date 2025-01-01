@@ -67,7 +67,7 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
         tempoRunAssigned = true;
       } else if (!intervalAssigned) {
         const intervalPace = paces.interval[week % paces.interval.length];
-        description = `Run ${intervalTemplate.intervals} intervals of ${intervalTemplate.distance} km at ${intervalPace} pace. Each interval is followed by ${intervalTemplate.rest} rest at ${paces.easy} pace`;
+        description = `Run ${intervalTemplate.intervals} intervals of ${intervalTemplate.distance} km at ${intervalPace} pace. Each interval is followed by ${intervalTemplate.rest} recovery at ${paces.easy} pace`;
         options.push(`Total distance: ${intervalDistance} km`);
         options.push(intervalPhrases[week % intervalPhrases.length]);
         title = 'Intervals';
