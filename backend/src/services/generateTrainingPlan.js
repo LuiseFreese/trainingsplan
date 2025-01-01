@@ -12,7 +12,7 @@ const generateTrainingPlan = (targetTime, fitnessLevel, trainingDays) => {
   validateTrainingDays(trainingDays);
 
   const totalWeeks = 16;
-  const marathonDistance = 42.195; // Marathon distance in kilometers
+  const marathonDistance = 42.195; 
 
   const fitness = FITNESS_LEVELS[fitnessLevel];
   const paces = TARGET_PACES[targetTime];
@@ -35,7 +35,9 @@ const generateTrainingPlan = (targetTime, fitnessLevel, trainingDays) => {
 
   // Add the marathon race in the last week
   const lastWeek = plan['TAPER'][plan['TAPER'].length - 1];
-  addMarathonRace(lastWeek, trainingDays, paces, marathonDistance);
+  if (lastWeek) {
+    addMarathonRace(lastWeek, trainingDays, paces, marathonDistance);
+  }
 
   return plan;
 };

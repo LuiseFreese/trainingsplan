@@ -46,15 +46,69 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
   let intervalAssigned = false;
   let yogaAssigned = false;
 
-  for (let dayIndex = 0; dayIndex < 7; dayIndex++) {
+  // Handle weekend logic
+  const saturdayIndex = daysOfWeek.find(day => day.label === 'Saturday').value;
+  const sundayIndex = daysOfWeek.find(day => day.label === 'Sunday').value;
+
+  if (trainingDays.includes(saturdayIndex) && trainingDays.includes(sundayIndex)) {
+    // Both Saturday and Sunday are selected
+    const longRunDay = Math.random() < 0.5 ? saturdayIndex : sundayIndex;
+    const yogaDay = longRunDay === saturdayIndex ? sundayIndex : saturdayIndex;
+
+    weekPlan.days.push({
+      day: longRunDay,
+      label: daysOfWeek[longRunDay].label,
+      title: 'Long Run',
+      description: `Run ${longRunDistance} km at ${paces.long} pace`,
+      options: [getRandomPhrase(longRunPhrases)]
+    });
+
+    weekPlan.days.push({
+      day: yogaDay,
+      label: daysOfWeek[yogaDay].label,
+      title: 'Yoga',
+      description: "Focus on recovery and mobility exercises",
+      options: [getRandomPhrase(yogaPhrases)]
+    });
+
+    longRunAssigned = true;
+    yogaAssigned = true;
+  } else if (trainingDays.includes(saturdayIndex)) {
+    // Only Saturday is selected
+    weekPlan.days.push({
+      day: saturdayIndex,
+      label: daysOfWeek[saturdayIndex].label,
+      title: 'Yoga',
+      description: "Focus on recovery and mobility exercises",
+      options: [getRandomPhrase(yogaPhrases)]
+    });
+
+    yogaAssigned = true;
+  } else if (trainingDays.includes(sundayIndex)) {
+    // Only Sunday is selected
+    weekPlan.days.push({
+      day: sundayIndex,
+      label: daysOfWeek[sundayIndex].label,
+      title: 'Long Run',
+      description: `Run ${longRunDistance} km at ${paces.long} pace`,
+      options: [getRandomPhrase(longRunPhrases)]
+    });
+
+    longRunAssigned = true;
+  }
+
+  for (let dayIndex = 0; dayIndex < daysOfWeek.length; dayIndex++) {
+    const day = daysOfWeek[dayIndex];
+    if (day.value === saturdayIndex || day.value === sundayIndex) continue; // Skip Saturday and Sunday as they are already handled
+
     let description = "";
     let distance = 0;
     let options = [];
     let title = "";
-    let label = daysOfWeek[dayIndex].label;
+    let label = day.label;
 
-    if (trainingDays.includes(dayIndex)) {
-      if (!longRunAssigned && (dayIndex === trainingDays[trainingDays.length - 1] || phase === 'TAPER')) {
+    if (trainingDays.includes(day.value)) {
+      if (!longRunAssigned) {
         distance = longRunDistance;
         description = `Run ${distance} km at ${paces.long} pace`;
         options.push(getRandomPhrase(longRunPhrases));
@@ -93,8 +147,25 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
       title = 'Rest Day';
     }
 
-    weekPlan.days.push({ day: dayIndex, label, title, description, options });
+    weekPlan.days.push({ day: day.value, label, title, description, options });
   }
+
+  // Ensure all days are included in the correct order
+  for (let dayIndex = 0; dayIndex < daysOfWeek.length; dayIndex++) {
+    const day = daysOfWeek[dayIndex];
+    if (!weekPlan.days.find(d => d.day === day.value)) {
+      weekPlan.days.push({
+        day: day.value,
+        label: day.label,
+        title: 'Rest Day',
+        description: getRandomPhrase(restPhrases),
+        options: []
+      });
+    }
+  }
+
+  // Sort days to ensure correct order (Monday to Sunday)
+  weekPlan.days.sort((a, b) => a.day - b.day);
 };
 
 module.exports = { assignTrainingDays, PHASES };
