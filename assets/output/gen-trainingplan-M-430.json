@@ -2,7 +2,7 @@
   "BASE": [
     {
       "weekNumber": 1,
-      "weekKM": 10,
+      "weekKM": 15,
       "days": [
         {
           "day": 0,
@@ -15,7 +15,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 2 km at 5:30 min/km pace",
+          "description": "Run 3 km at 5:30 min/km pace",
           "options": [
             "Increase your lactate threshold and improve your race pace"
           ]
@@ -64,7 +64,7 @@
     },
     {
       "weekNumber": 2,
-      "weekKM": 11,
+      "weekKM": 16,
       "days": [
         {
           "day": 0,
@@ -77,7 +77,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 2 km at 5:30 min/km pace",
+          "description": "Run 3 km at 5:30 min/km pace",
           "options": [
             "Challenge yourself with this tempo run to enhance your speed"
           ]
@@ -126,7 +126,7 @@
     },
     {
       "weekNumber": 3,
-      "weekKM": 12,
+      "weekKM": 18,
       "days": [
         {
           "day": 0,
@@ -139,7 +139,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 2 km at 5:30 min/km pace",
+          "description": "Run 4 km at 5:30 min/km pace",
           "options": [
             "Boost your speed endurance and get comfortable with faster paces"
           ]
@@ -188,7 +188,7 @@
     },
     {
       "weekNumber": 4,
-      "weekKM": 13,
+      "weekKM": 19,
       "days": [
         {
           "day": 0,
@@ -201,7 +201,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 3 km at 5:30 min/km pace",
+          "description": "Run 4 km at 5:30 min/km pace",
           "options": [
             "Increase your lactate threshold and improve your race pace"
           ]
@@ -252,7 +252,7 @@
   "BUILD": [
     {
       "weekNumber": 5,
-      "weekKM": 21,
+      "weekKM": 30,
       "days": [
         {
           "day": 0,
@@ -265,7 +265,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 4 km at 5:30 min/km pace",
+          "description": "Run 6 km at 5:30 min/km pace",
           "options": [
             "Challenge yourself with this tempo run to enhance your speed"
           ]
@@ -314,7 +314,7 @@
     },
     {
       "weekNumber": 6,
-      "weekKM": 23,
+      "weekKM": 32,
       "days": [
         {
           "day": 0,
@@ -327,7 +327,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 5 km at 5:30 min/km pace",
+          "description": "Run 6 km at 5:30 min/km pace",
           "options": [
             "Boost your speed endurance and get comfortable with faster paces"
           ]
@@ -376,7 +376,7 @@
     },
     {
       "weekNumber": 7,
-      "weekKM": 24,
+      "weekKM": 34,
       "days": [
         {
           "day": 0,
@@ -389,7 +389,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 5 km at 5:30 min/km pace",
+          "description": "Run 7 km at 5:30 min/km pace",
           "options": [
             "Increase your lactate threshold and improve your race pace"
           ]
@@ -438,7 +438,7 @@
     },
     {
       "weekNumber": 8,
-      "weekKM": 26,
+      "weekKM": 36,
       "days": [
         {
           "day": 0,
@@ -451,7 +451,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 5 km at 5:30 min/km pace",
+          "description": "Run 7 km at 5:30 min/km pace",
           "options": [
             "Challenge yourself with this tempo run to enhance your speed"
           ]
@@ -500,7 +500,7 @@
     },
     {
       "weekNumber": 9,
-      "weekKM": 27,
+      "weekKM": 38,
       "days": [
         {
           "day": 0,
@@ -513,7 +513,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 5 km at 5:30 min/km pace",
+          "description": "Run 8 km at 5:30 min/km pace",
           "options": [
             "Boost your speed endurance and get comfortable with faster paces"
           ]
@@ -562,7 +562,7 @@
     },
     {
       "weekNumber": 10,
-      "weekKM": 29,
+      "weekKM": 40,
       "days": [
         {
           "day": 0,
@@ -575,7 +575,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 6 km at 5:30 min/km pace",
+          "description": "Run 8 km at 5:30 min/km pace",
           "options": [
             "Increase your lactate threshold and improve your race pace"
           ]
@@ -624,7 +624,7 @@
     },
     {
       "weekNumber": 11,
-      "weekKM": 30,
+      "weekKM": 42,
       "days": [
         {
           "day": 0,
@@ -637,7 +637,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 6 km at 5:30 min/km pace",
+          "description": "Run 8 km at 5:30 min/km pace",
           "options": [
             "Challenge yourself with this tempo run to enhance your speed"
           ]
@@ -686,7 +686,7 @@
     },
     {
       "weekNumber": 12,
-      "weekKM": 32,
+      "weekKM": 44,
       "days": [
         {
           "day": 0,
@@ -699,7 +699,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 6 km at 5:30 min/km pace",
+          "description": "Run 9 km at 5:30 min/km pace",
           "options": [
             "Boost your speed endurance and get comfortable with faster paces"
           ]
@@ -750,7 +750,7 @@
   "PEAK": [
     {
       "weekNumber": 13,
-      "weekKM": 44,
+      "weekKM": 62,
       "days": [
         {
           "day": 0,
@@ -763,7 +763,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 9 km at 5:30 min/km pace",
+          "description": "Run 12 km at 5:30 min/km pace",
           "options": [
             "Increase your lactate threshold and improve your race pace"
           ]
@@ -812,7 +812,7 @@
     },
     {
       "weekNumber": 14,
-      "weekKM": 46,
+      "weekKM": 65,
       "days": [
         {
           "day": 0,
@@ -825,7 +825,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 9 km at 5:30 min/km pace",
+          "description": "Run 13 km at 5:30 min/km pace",
           "options": [
             "Challenge yourself with this tempo run to enhance your speed"
           ]
@@ -874,7 +874,7 @@
     },
     {
       "weekNumber": 15,
-      "weekKM": 48,
+      "weekKM": 67,
       "days": [
         {
           "day": 0,
@@ -887,7 +887,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Tempo Run",
-          "description": "Run 10 km at 5:30 min/km pace",
+          "description": "Run 13 km at 5:30 min/km pace",
           "options": [
             "Boost your speed endurance and get comfortable with faster paces"
           ]
@@ -938,7 +938,7 @@
   "TAPER": [
     {
       "weekNumber": 16,
-      "weekKM": 25,
+      "weekKM": 35,
       "days": [
         {
           "day": 6,

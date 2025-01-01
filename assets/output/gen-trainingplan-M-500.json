@@ -24,7 +24,7 @@
           "title": "Tempo Run",
           "description": "Run 2 km at 6:00 min/km pace",
           "options": [
-            "Increase your lactate threshold and improve your race pace"
+            "Tempo runs help you run faster for longer"
           ]
         },
         {
@@ -38,10 +38,10 @@
           "day": 4,
           "label": "Friday",
           "title": "Intervals",
-          "description": "Run 6 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at easy pace",
+          "description": "Run 5 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at 7:00 min/km pace",
           "options": [
-            "Total distance: 4 km",
-            "Sharpen your speed and agility"
+            "Total distance: 3 km",
+            "Intervals help you run faster and more efficiently"
           ]
         },
         {
@@ -50,7 +50,7 @@
           "title": "Yoga",
           "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Improve your mobility and recovery"
+            "Enhance your flexibility and prevent injuries"
           ]
         },
         {
@@ -60,7 +60,8 @@
           "description": "Rest. It's part of the plan.",
           "options": []
         }
-      ]
+      ],
+      "phaseDescription": "Getting into the habit of running 3 times per week, getting used to rest and yoga days, and building some foundational strength and stamina."
     },
     {
       "weekNumber": 2,
@@ -86,7 +87,7 @@
           "title": "Tempo Run",
           "description": "Run 2 km at 6:00 min/km pace",
           "options": [
-            "Challenge yourself with this tempo run to enhance your speed"
+            "Maintain a challenging but sustainable pace"
           ]
         },
         {
@@ -100,10 +101,10 @@
           "day": 4,
           "label": "Friday",
           "title": "Intervals",
-          "description": "Run 8 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
+          "description": "Run 4 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at 7:00 min/km pace",
           "options": [
-            "Total distance: 6 km",
-            "Enhance your performance and break through your speed barriers"
+            "Total distance: 3 km",
+            "Focus on maintaining good form during each interval"
           ]
         },
         {
@@ -112,7 +113,7 @@
           "title": "Yoga",
           "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Focus on stretching and relaxation to aid your recovery"
+            "Yoga helps you recover and stay injury-free"
           ]
         },
         {
@@ -122,11 +123,12 @@
           "description": "Rest. You need it.",
           "options": []
         }
-      ]
+      ],
+      "phaseDescription": "Getting into the habit of running 3 times per week, getting used to rest and yoga days, and building some foundational strength and stamina."
     },
     {
       "weekNumber": 3,
-      "weekKM": 12,
+      "weekKM": 13,
       "days": [
         {
           "day": 0,
@@ -146,7 +148,7 @@
           "day": 2,
           "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 2 km at 6:00 min/km pace",
+          "description": "Run 3 km at 6:00 min/km pace",
           "options": [
             "Boost your speed endurance and get comfortable with faster paces"
           ]
@@ -162,9 +164,9 @@
           "day": 4,
           "label": "Friday",
           "title": "Intervals",
-          "description": "Run 10 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
+          "description": "Run 3 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at 7:00 min/km pace",
           "options": [
-            "Total distance: 10 km",
+            "Total distance: 3 km",
             "Improve your speed and running economy"
           ]
         },
@@ -174,7 +176,7 @@
           "title": "Yoga",
           "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Enhance your flexibility and prevent injuries"
+            "Focus on recovery and mobility exercises"
           ]
         },
         {
@@ -184,11 +186,12 @@
           "description": "Happy Rest Day",
           "options": []
         }
-      ]
+      ],
+      "phaseDescription": "Getting into the habit of running 3 times per week, getting used to rest and yoga days, and building some foundational strength and stamina."
     },
     {
       "weekNumber": 4,
-      "weekKM": 13,
+      "weekKM": 14,
       "days": [
         {
           "day": 0,
@@ -210,7 +213,7 @@
           "title": "Tempo Run",
           "description": "Run 3 km at 6:00 min/km pace",
           "options": [
-            "Increase your lactate threshold and improve your race pace"
+            "Tempo runs help you run faster for longer"
           ]
         },
         {
@@ -224,10 +227,10 @@
           "day": 4,
           "label": "Friday",
           "title": "Intervals",
-          "description": "Run 4 intervals of 0.4 km at 5:30 min/km pace. Each interval is followed by 2:00 min rest at easy pace",
+          "description": "Run 6 intervals of 0.4 km at 5:30 min/km pace. Each interval is followed by 2:00 min rest at 7:00 min/km pace",
           "options": [
             "Total distance: 2 km",
-            "Sharpen your speed and agility"
+            "Intervals help you run faster and more efficiently"
           ]
         },
         {
@@ -236,7 +239,7 @@
           "title": "Yoga",
           "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Improve your mobility and recovery"
+            "Enhance your flexibility and prevent injuries"
           ]
         },
         {
@@ -246,74 +249,13 @@
           "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": []
         }
-      ]
+      ],
+      "phaseDescription": "Getting into the habit of running 3 times per week, getting used to rest and yoga days, and building some foundational strength and stamina."
     }
   ],
   "BUILD": [
     {
       "weekNumber": 5,
-      "weekKM": 21,
-      "days": [
-        {
-          "day": 0,
-          "label": "Monday",
-          "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
-          "options": []
-        },
-        {
-          "day": 1,
-          "label": "Tuesday",
-          "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
-          "options": []
-        },
-        {
-          "day": 2,
-          "label": "Wednesday",
-          "title": "Tempo Run",
-          "description": "Run 4 km at 6:00 min/km pace",
-          "options": [
-            "Challenge yourself with this tempo run to enhance your speed"
-          ]
-        },
-        {
-          "day": 3,
-          "label": "Thursday",
-          "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
-          "options": []
-        },
-        {
-          "day": 4,
-          "label": "Friday",
-          "title": "Intervals",
-          "description": "Run 6 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at easy pace",
-          "options": [
-            "Total distance: 4 km",
-            "Enhance your performance and break through your speed barriers"
-          ]
-        },
-        {
-          "day": 5,
-          "label": "Saturday",
-          "title": "Yoga",
-          "description": "Focus on recovery and mobility exercises",
-          "options": [
-            "Focus on stretching and relaxation to aid your recovery"
-          ]
-        },
-        {
-          "day": 6,
-          "label": "Sunday",
-          "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
-          "options": []
-        }
-      ]
-    },
-    {
-      "weekNumber": 6,
       "weekKM": 23,
       "days": [
         {
@@ -336,7 +278,7 @@
           "title": "Tempo Run",
           "description": "Run 5 km at 6:00 min/km pace",
           "options": [
-            "Boost your speed endurance and get comfortable with faster paces"
+            "Maintain a challenging but sustainable pace"
           ]
         },
         {
@@ -350,9 +292,72 @@
           "day": 4,
           "label": "Friday",
           "title": "Intervals",
-          "description": "Run 8 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
+          "description": "Run 5 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at 7:00 min/km pace",
           "options": [
-            "Total distance: 6 km",
+            "Total distance: 3 km",
+            "Focus on maintaining good form during each interval"
+          ]
+        },
+        {
+          "day": 5,
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
+          "options": [
+            "Yoga helps you recover and stay injury-free"
+          ]
+        },
+        {
+          "day": 6,
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
+        }
+      ],
+      "phaseDescription": "Improving endurance, stamina, speed, and fitness."
+    },
+    {
+      "weekNumber": 6,
+      "weekKM": 25,
+      "days": [
+        {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
+          "day": 1,
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
+          "day": 2,
+          "label": "Wednesday",
+          "title": "Tempo Run",
+          "description": "Run 5 km at 6:00 min/km pace",
+          "options": [
+            "Boost your speed endurance and get comfortable with faster paces"
+          ]
+        },
+        {
+          "day": 3,
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
+          "day": 4,
+          "label": "Friday",
+          "title": "Intervals",
+          "description": "Run 4 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at 7:00 min/km pace",
+          "options": [
+            "Total distance: 3 km",
             "Improve your speed and running economy"
           ]
         },
@@ -362,158 +367,35 @@
           "title": "Yoga",
           "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Enhance your flexibility and prevent injuries"
+            "Focus on recovery and mobility exercises"
           ]
         },
         {
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest. It's part of the plan.",
+          "description": "Rest. You need it.",
           "options": []
         }
-      ]
+      ],
+      "phaseDescription": "Improving endurance, stamina, speed, and fitness."
     },
     {
       "weekNumber": 7,
-      "weekKM": 24,
-      "days": [
-        {
-          "day": 0,
-          "label": "Monday",
-          "title": "Rest Day",
-          "description": "Rest. You need it.",
-          "options": []
-        },
-        {
-          "day": 1,
-          "label": "Tuesday",
-          "title": "Rest Day",
-          "description": "Rest. You need it.",
-          "options": []
-        },
-        {
-          "day": 2,
-          "label": "Wednesday",
-          "title": "Tempo Run",
-          "description": "Run 5 km at 6:00 min/km pace",
-          "options": [
-            "Increase your lactate threshold and improve your race pace"
-          ]
-        },
-        {
-          "day": 3,
-          "label": "Thursday",
-          "title": "Rest Day",
-          "description": "Rest. You need it.",
-          "options": []
-        },
-        {
-          "day": 4,
-          "label": "Friday",
-          "title": "Intervals",
-          "description": "Run 10 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
-          "options": [
-            "Total distance: 10 km",
-            "Sharpen your speed and agility"
-          ]
-        },
-        {
-          "day": 5,
-          "label": "Saturday",
-          "title": "Yoga",
-          "description": "Focus on recovery and mobility exercises",
-          "options": [
-            "Improve your mobility and recovery"
-          ]
-        },
-        {
-          "day": 6,
-          "label": "Sunday",
-          "title": "Rest Day",
-          "description": "Rest. You need it.",
-          "options": []
-        }
-      ]
-    },
-    {
-      "weekNumber": 8,
-      "weekKM": 26,
-      "days": [
-        {
-          "day": 0,
-          "label": "Monday",
-          "title": "Rest Day",
-          "description": "Happy Rest Day",
-          "options": []
-        },
-        {
-          "day": 1,
-          "label": "Tuesday",
-          "title": "Rest Day",
-          "description": "Happy Rest Day",
-          "options": []
-        },
-        {
-          "day": 2,
-          "label": "Wednesday",
-          "title": "Tempo Run",
-          "description": "Run 5 km at 6:00 min/km pace",
-          "options": [
-            "Challenge yourself with this tempo run to enhance your speed"
-          ]
-        },
-        {
-          "day": 3,
-          "label": "Thursday",
-          "title": "Rest Day",
-          "description": "Happy Rest Day",
-          "options": []
-        },
-        {
-          "day": 4,
-          "label": "Friday",
-          "title": "Intervals",
-          "description": "Run 4 intervals of 0.4 km at 5:30 min/km pace. Each interval is followed by 2:00 min rest at easy pace",
-          "options": [
-            "Total distance: 2 km",
-            "Enhance your performance and break through your speed barriers"
-          ]
-        },
-        {
-          "day": 5,
-          "label": "Saturday",
-          "title": "Yoga",
-          "description": "Focus on recovery and mobility exercises",
-          "options": [
-            "Focus on stretching and relaxation to aid your recovery"
-          ]
-        },
-        {
-          "day": 6,
-          "label": "Sunday",
-          "title": "Rest Day",
-          "description": "Happy Rest Day",
-          "options": []
-        }
-      ]
-    },
-    {
-      "weekNumber": 9,
       "weekKM": 27,
       "days": [
         {
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day",
           "options": []
         },
         {
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day",
           "options": []
         },
         {
@@ -522,24 +404,24 @@
           "title": "Tempo Run",
           "description": "Run 5 km at 6:00 min/km pace",
           "options": [
-            "Boost your speed endurance and get comfortable with faster paces"
+            "Tempo runs help you run faster for longer"
           ]
         },
         {
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day",
           "options": []
         },
         {
           "day": 4,
           "label": "Friday",
           "title": "Intervals",
-          "description": "Run 6 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at easy pace",
+          "description": "Run 3 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at 7:00 min/km pace",
           "options": [
-            "Total distance: 4 km",
-            "Improve your speed and running economy"
+            "Total distance: 3 km",
+            "Intervals help you run faster and more efficiently"
           ]
         },
         {
@@ -555,13 +437,14 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day",
           "options": []
         }
-      ]
+      ],
+      "phaseDescription": "Improving endurance, stamina, speed, and fitness."
     },
     {
-      "weekNumber": 10,
+      "weekNumber": 8,
       "weekKM": 29,
       "days": [
         {
@@ -584,7 +467,7 @@
           "title": "Tempo Run",
           "description": "Run 6 km at 6:00 min/km pace",
           "options": [
-            "Increase your lactate threshold and improve your race pace"
+            "Maintain a challenging but sustainable pace"
           ]
         },
         {
@@ -598,10 +481,10 @@
           "day": 4,
           "label": "Friday",
           "title": "Intervals",
-          "description": "Run 8 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
+          "description": "Run 6 intervals of 0.4 km at 5:30 min/km pace. Each interval is followed by 2:00 min rest at 7:00 min/km pace",
           "options": [
-            "Total distance: 6 km",
-            "Sharpen your speed and agility"
+            "Total distance: 2 km",
+            "Focus on maintaining good form during each interval"
           ]
         },
         {
@@ -610,7 +493,7 @@
           "title": "Yoga",
           "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Improve your mobility and recovery"
+            "Yoga helps you recover and stay injury-free"
           ]
         },
         {
@@ -620,11 +503,12 @@
           "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": []
         }
-      ]
+      ],
+      "phaseDescription": "Improving endurance, stamina, speed, and fitness."
     },
     {
-      "weekNumber": 11,
-      "weekKM": 30,
+      "weekNumber": 9,
+      "weekKM": 31,
       "days": [
         {
           "day": 0,
@@ -638,68 +522,6 @@
           "label": "Tuesday",
           "title": "Rest Day",
           "description": "Rest. It's part of the plan.",
-          "options": []
-        },
-        {
-          "day": 2,
-          "label": "Wednesday",
-          "title": "Tempo Run",
-          "description": "Run 6 km at 6:00 min/km pace",
-          "options": [
-            "Challenge yourself with this tempo run to enhance your speed"
-          ]
-        },
-        {
-          "day": 3,
-          "label": "Thursday",
-          "title": "Rest Day",
-          "description": "Rest. It's part of the plan.",
-          "options": []
-        },
-        {
-          "day": 4,
-          "label": "Friday",
-          "title": "Intervals",
-          "description": "Run 10 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
-          "options": [
-            "Total distance: 10 km",
-            "Enhance your performance and break through your speed barriers"
-          ]
-        },
-        {
-          "day": 5,
-          "label": "Saturday",
-          "title": "Yoga",
-          "description": "Focus on recovery and mobility exercises",
-          "options": [
-            "Focus on stretching and relaxation to aid your recovery"
-          ]
-        },
-        {
-          "day": 6,
-          "label": "Sunday",
-          "title": "Rest Day",
-          "description": "Rest. It's part of the plan.",
-          "options": []
-        }
-      ]
-    },
-    {
-      "weekNumber": 12,
-      "weekKM": 32,
-      "days": [
-        {
-          "day": 0,
-          "label": "Monday",
-          "title": "Rest Day",
-          "description": "Rest. You need it.",
-          "options": []
-        },
-        {
-          "day": 1,
-          "label": "Tuesday",
-          "title": "Rest Day",
-          "description": "Rest. You need it.",
           "options": []
         },
         {
@@ -715,6 +537,69 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
+        },
+        {
+          "day": 4,
+          "label": "Friday",
+          "title": "Intervals",
+          "description": "Run 5 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at 7:00 min/km pace",
+          "options": [
+            "Total distance: 3 km",
+            "Improve your speed and running economy"
+          ]
+        },
+        {
+          "day": 5,
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
+          "options": [
+            "Focus on recovery and mobility exercises"
+          ]
+        },
+        {
+          "day": 6,
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
+        }
+      ],
+      "phaseDescription": "Improving endurance, stamina, speed, and fitness."
+    },
+    {
+      "weekNumber": 10,
+      "weekKM": 33,
+      "days": [
+        {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
+          "day": 1,
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
+          "day": 2,
+          "label": "Wednesday",
+          "title": "Tempo Run",
+          "description": "Run 7 km at 6:00 min/km pace",
+          "options": [
+            "Tempo runs help you run faster for longer"
+          ]
+        },
+        {
+          "day": 3,
+          "label": "Thursday",
+          "title": "Rest Day",
           "description": "Rest. You need it.",
           "options": []
         },
@@ -722,7 +607,133 @@
           "day": 4,
           "label": "Friday",
           "title": "Intervals",
-          "description": "Run 4 intervals of 0.4 km at 5:30 min/km pace. Each interval is followed by 2:00 min rest at easy pace",
+          "description": "Run 4 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at 7:00 min/km pace",
+          "options": [
+            "Total distance: 3 km",
+            "Intervals help you run faster and more efficiently"
+          ]
+        },
+        {
+          "day": 5,
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
+          "options": [
+            "Enhance your flexibility and prevent injuries"
+          ]
+        },
+        {
+          "day": 6,
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        }
+      ],
+      "phaseDescription": "Improving endurance, stamina, speed, and fitness."
+    },
+    {
+      "weekNumber": 11,
+      "weekKM": 35,
+      "days": [
+        {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
+        },
+        {
+          "day": 1,
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
+        },
+        {
+          "day": 2,
+          "label": "Wednesday",
+          "title": "Tempo Run",
+          "description": "Run 7 km at 6:00 min/km pace",
+          "options": [
+            "Maintain a challenging but sustainable pace"
+          ]
+        },
+        {
+          "day": 3,
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
+        },
+        {
+          "day": 4,
+          "label": "Friday",
+          "title": "Intervals",
+          "description": "Run 3 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at 7:00 min/km pace",
+          "options": [
+            "Total distance: 3 km",
+            "Focus on maintaining good form during each interval"
+          ]
+        },
+        {
+          "day": 5,
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
+          "options": [
+            "Yoga helps you recover and stay injury-free"
+          ]
+        },
+        {
+          "day": 6,
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Happy Rest Day",
+          "options": []
+        }
+      ],
+      "phaseDescription": "Improving endurance, stamina, speed, and fitness."
+    },
+    {
+      "weekNumber": 12,
+      "weekKM": 37,
+      "days": [
+        {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
+        },
+        {
+          "day": 1,
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
+        },
+        {
+          "day": 2,
+          "label": "Wednesday",
+          "title": "Tempo Run",
+          "description": "Run 7 km at 6:00 min/km pace",
+          "options": [
+            "Boost your speed endurance and get comfortable with faster paces"
+          ]
+        },
+        {
+          "day": 3,
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
+        },
+        {
+          "day": 4,
+          "label": "Friday",
+          "title": "Intervals",
+          "description": "Run 6 intervals of 0.4 km at 5:30 min/km pace. Each interval is followed by 2:00 min rest at 7:00 min/km pace",
           "options": [
             "Total distance: 2 km",
             "Improve your speed and running economy"
@@ -734,7 +745,135 @@
           "title": "Yoga",
           "description": "Focus on recovery and mobility exercises",
           "options": [
+            "Focus on recovery and mobility exercises"
+          ]
+        },
+        {
+          "day": 6,
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "options": []
+        }
+      ],
+      "phaseDescription": "Improving endurance, stamina, speed, and fitness."
+    }
+  ],
+  "PEAK": [
+    {
+      "weekNumber": 13,
+      "weekKM": 53,
+      "days": [
+        {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
+        },
+        {
+          "day": 1,
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
+        },
+        {
+          "day": 2,
+          "label": "Wednesday",
+          "title": "Tempo Run",
+          "description": "Run 11 km at 6:00 min/km pace",
+          "options": [
+            "Tempo runs help you run faster for longer"
+          ]
+        },
+        {
+          "day": 3,
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
+        },
+        {
+          "day": 4,
+          "label": "Friday",
+          "title": "Intervals",
+          "description": "Run 5 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at 7:00 min/km pace",
+          "options": [
+            "Total distance: 3 km",
+            "Intervals help you run faster and more efficiently"
+          ]
+        },
+        {
+          "day": 5,
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
+          "options": [
             "Enhance your flexibility and prevent injuries"
+          ]
+        },
+        {
+          "day": 6,
+          "label": "Sunday",
+          "title": "Rest Day",
+          "description": "Rest. It's part of the plan.",
+          "options": []
+        }
+      ],
+      "phaseDescription": "Immediate preparation for the big race day."
+    },
+    {
+      "weekNumber": 14,
+      "weekKM": 55,
+      "days": [
+        {
+          "day": 0,
+          "label": "Monday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
+          "day": 1,
+          "label": "Tuesday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
+          "day": 2,
+          "label": "Wednesday",
+          "title": "Tempo Run",
+          "description": "Run 11 km at 6:00 min/km pace",
+          "options": [
+            "Maintain a challenging but sustainable pace"
+          ]
+        },
+        {
+          "day": 3,
+          "label": "Thursday",
+          "title": "Rest Day",
+          "description": "Rest. You need it.",
+          "options": []
+        },
+        {
+          "day": 4,
+          "label": "Friday",
+          "title": "Intervals",
+          "description": "Run 4 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at 7:00 min/km pace",
+          "options": [
+            "Total distance: 3 km",
+            "Focus on maintaining good form during each interval"
+          ]
+        },
+        {
+          "day": 5,
+          "label": "Saturday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
+          "options": [
+            "Yoga helps you recover and stay injury-free"
           ]
         },
         {
@@ -744,157 +883,32 @@
           "description": "Rest. You need it.",
           "options": []
         }
-      ]
-    }
-  ],
-  "PEAK": [
-    {
-      "weekNumber": 13,
-      "weekKM": 44,
-      "days": [
-        {
-          "day": 0,
-          "label": "Monday",
-          "title": "Rest Day",
-          "description": "Happy Rest Day",
-          "options": []
-        },
-        {
-          "day": 1,
-          "label": "Tuesday",
-          "title": "Rest Day",
-          "description": "Happy Rest Day",
-          "options": []
-        },
-        {
-          "day": 2,
-          "label": "Wednesday",
-          "title": "Tempo Run",
-          "description": "Run 9 km at 6:00 min/km pace",
-          "options": [
-            "Increase your lactate threshold and improve your race pace"
-          ]
-        },
-        {
-          "day": 3,
-          "label": "Thursday",
-          "title": "Rest Day",
-          "description": "Happy Rest Day",
-          "options": []
-        },
-        {
-          "day": 4,
-          "label": "Friday",
-          "title": "Intervals",
-          "description": "Run 6 intervals of 0.6 km at 5:45 min/km pace. Each interval is followed by 1:30 min rest at easy pace",
-          "options": [
-            "Total distance: 4 km",
-            "Sharpen your speed and agility"
-          ]
-        },
-        {
-          "day": 5,
-          "label": "Saturday",
-          "title": "Yoga",
-          "description": "Focus on recovery and mobility exercises",
-          "options": [
-            "Improve your mobility and recovery"
-          ]
-        },
-        {
-          "day": 6,
-          "label": "Sunday",
-          "title": "Rest Day",
-          "description": "Happy Rest Day",
-          "options": []
-        }
-      ]
-    },
-    {
-      "weekNumber": 14,
-      "weekKM": 46,
-      "days": [
-        {
-          "day": 0,
-          "label": "Monday",
-          "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
-          "options": []
-        },
-        {
-          "day": 1,
-          "label": "Tuesday",
-          "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
-          "options": []
-        },
-        {
-          "day": 2,
-          "label": "Wednesday",
-          "title": "Tempo Run",
-          "description": "Run 9 km at 6:00 min/km pace",
-          "options": [
-            "Challenge yourself with this tempo run to enhance your speed"
-          ]
-        },
-        {
-          "day": 3,
-          "label": "Thursday",
-          "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
-          "options": []
-        },
-        {
-          "day": 4,
-          "label": "Friday",
-          "title": "Intervals",
-          "description": "Run 8 intervals of 0.8 km at 5:30 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
-          "options": [
-            "Total distance: 6 km",
-            "Enhance your performance and break through your speed barriers"
-          ]
-        },
-        {
-          "day": 5,
-          "label": "Saturday",
-          "title": "Yoga",
-          "description": "Focus on recovery and mobility exercises",
-          "options": [
-            "Focus on stretching and relaxation to aid your recovery"
-          ]
-        },
-        {
-          "day": 6,
-          "label": "Sunday",
-          "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
-          "options": []
-        }
-      ]
+      ],
+      "phaseDescription": "Immediate preparation for the big race day."
     },
     {
       "weekNumber": 15,
-      "weekKM": 48,
+      "weekKM": 58,
       "days": [
         {
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day",
           "options": []
         },
         {
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day",
           "options": []
         },
         {
           "day": 2,
           "label": "Wednesday",
           "title": "Tempo Run",
-          "description": "Run 10 km at 6:00 min/km pace",
+          "description": "Run 12 km at 6:00 min/km pace",
           "options": [
             "Boost your speed endurance and get comfortable with faster paces"
           ]
@@ -903,16 +917,16 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day",
           "options": []
         },
         {
           "day": 4,
           "label": "Friday",
           "title": "Intervals",
-          "description": "Run 10 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at easy pace",
+          "description": "Run 3 intervals of 1 km at 5:45 min/km pace. Each interval is followed by 1:00 min rest at 7:00 min/km pace",
           "options": [
-            "Total distance: 10 km",
+            "Total distance: 3 km",
             "Improve your speed and running economy"
           ]
         },
@@ -922,24 +936,71 @@
           "title": "Yoga",
           "description": "Focus on recovery and mobility exercises",
           "options": [
-            "Enhance your flexibility and prevent injuries"
+            "Focus on recovery and mobility exercises"
           ]
         },
         {
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day",
           "options": []
         }
-      ]
+      ],
+      "phaseDescription": "Immediate preparation for the big race day."
     }
   ],
   "TAPER": [
     {
       "weekNumber": 16,
-      "weekKM": 25,
+      "weekKM": 30,
       "days": [
+        {
+          "day": 2,
+          "label": "Wednesday",
+          "title": "Long Run",
+          "description": "Run 0 km at 7:30 min/km pace",
+          "options": [
+            "Long runs are key to your marathon success"
+          ]
+        },
+        {
+          "day": 4,
+          "label": "Friday",
+          "title": "Tempo Run",
+          "description": "Run 6 km at 6:00 min/km pace",
+          "options": [
+            "Tempo runs help you run faster for longer"
+          ]
+        },
+        {
+          "day": 5,
+          "label": "Saturday",
+          "title": "Intervals",
+          "description": "Run 6 intervals of 0.4 km at 5:30 min/km pace. Each interval is followed by 2:00 min rest at 7:00 min/km pace",
+          "options": [
+            "Total distance: 2 km",
+            "Intervals help you run faster and more efficiently"
+          ]
+        },
+        {
+          "day": 2,
+          "label": "Wednesday",
+          "title": "Easy Run",
+          "description": "Run 5 km at 7:00 min/km pace",
+          "options": [
+            "Keep it light and easy to stay fresh for the marathon"
+          ]
+        },
+        {
+          "day": 4,
+          "label": "Friday",
+          "title": "Yoga",
+          "description": "Focus on recovery and mobility exercises",
+          "options": [
+            "Enhance your flexibility and prevent injuries"
+          ]
+        },
         {
           "day": 7,
           "title": "Marathon",
@@ -948,7 +1009,8 @@
             "This is it! Give it your all and enjoy the race"
           ]
         }
-      ]
+      ],
+      "phaseDescription": "Ensuring you are healthy, not injured, and well-rested for the start line."
     }
   ]
 }
