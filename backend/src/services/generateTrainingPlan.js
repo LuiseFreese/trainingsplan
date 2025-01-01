@@ -40,6 +40,10 @@ const generateTrainingPlan = (targetTime, fitnessLevel, trainingDays) => {
   // Add the marathon race in the last week
   const lastWeek = plan['TAPER'][plan['TAPER'].length - 1];
   if (lastWeek) {
+    // Clear existing activities in the last week
+    lastWeek.days = [];
+
+    // Add the marathon race activities
     addMarathonRace(lastWeek, trainingDays, paces, marathonDistance);
   }
 
