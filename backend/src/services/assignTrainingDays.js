@@ -68,8 +68,12 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
         tempoRunAssigned = true;
       } else if (!intervalAssigned) {
         const intervalPace = paces.interval[week % paces.interval.length];
+        const restTimeInMinutes = parseFloat(intervalTemplate.rest.split(':')[0]) + parseFloat(intervalTemplate.rest.split(':')[1]) / 60;
+        const restDistance = restTimeInMinutes / parseFloat(paces.easy.split(' ')[0]);
+        const totalIntervalDistance = intervalTemplate.intervals * intervalTemplate.distance + intervalTemplate.intervals * restDistance;
+        distance = Math.round(totalIntervalDistance * 10) / 10; // Round to 1 decimal place
         description = `Run ${intervalTemplate.intervals} intervals of ${intervalTemplate.distance} km at ${intervalPace} pace. Each interval is followed by ${intervalTemplate.rest} rest at ${paces.easy} pace`;
-        options.push(`Total distance: ${intervalDistance} km`);
+        options.push(`Total distance: ${distance} km`);
         options.push(getRandomPhrase(intervalPhrases));
         title = 'Intervals';
         intervalAssigned = true;
