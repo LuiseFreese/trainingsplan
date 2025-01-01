@@ -80,13 +80,13 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
     weekPlan.days.push({
       day: saturdayIndex,
       label: daysOfWeek[saturdayIndex].label,
-      title: 'Yoga',
-      description: "Focus on recovery and mobility exercises",
-      options: [getRandomPhrase(yogaPhrases)],
-      distance: 0
+      title: 'Long Run',
+      description: `Run ${longRunDistance} km at ${paces.long} pace`,
+      options: [getRandomPhrase(longRunPhrases)],
+      distance: longRunDistance
     });
 
-    yogaAssigned = true;
+    longRunAssigned = true;
   } else if (trainingDays.includes(sundayIndex)) {
     // Only Sunday is selected
     weekPlan.days.push({
