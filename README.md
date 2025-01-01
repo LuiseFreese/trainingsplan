@@ -99,22 +99,28 @@ In the last week (Taper phase), the plan includes an easy run and a yoga session
 
 ### Key Functions
 
-* generateTrainingPlan: Generates the 16-week marathon training plan based on the user's target time, fitness level, and preferred training days
-* assignTrainingDays: Assigns training sessions to the selected days, ensuring a balanced distribution of different types of runs
-* calculateLongRunDistance: Calculates the distance for long runs based on the current phase of the training plan
-* getPhase: Determines the current phase (Base, Build, Peak, Taper) based on the week number
+* `generateTrainingPlan.js`: This is the main entry point for generating the training plan. It uses other services to assign training days, calculate distances, and determine phases.
+* `assignTrainingDays.js:` Called by generateTrainingPlan to assign training sessions to each week.
+* `calculateLongRunDistance.js`: Called by assignTrainingDays to calculate the distance for long runs.
+* `calculateWeeklyDistance.js`: Called by generateTrainingPlan to calculate the total weekly distance.
+* `getPhase.js`: Called by generateTrainingPlan to determine the current phase of the training plan.
+* `addMarathonRace.js`: Called by generateTrainingPlan to add the marathon race activities to the last week.
+* `initializeTrainingPlan.js`: Called by generateTrainingPlan to initialize the training plan structure.
 
-### How the Application Works
+### Example Workflow
 
-* User Input: The user selects their fitness level, target time, and preferred training days on the frontend.
-* Generate Plan: When the user clicks "Generate Plan", the frontend sends a request to the backend with the selected options.
-* Training Plan Generation: The backend uses the generateTrainingPlan function to create a customized training plan. This function:
-  * Divides the plan into four phases: Base, Build, Peak, and Taper
-  * Assigns different types of training sessions (long runs, tempo runs, interval training, easy runs, yoga, rest days) to the selected days using the assignTrainingDays function
-  * Calculates the distance for long runs using the calculateLongRunDistance function
-  * Ensures that the last week includes an easy run and a yoga session before the marathon race
-* Response: The backend sends the generated training plan back to the frontend
-* Display Plan: The frontend displays the training plan to the user, including the details of each training session
+1. User Input: The user selects their fitness level, target time, and preferred training days on the frontend.
+2. Generate Plan: When the user clicks "Generate Plan", the frontend sends a request to the backend with the selected options.
+3. Training Plan Generation:
+    * The backend uses `generateTrainingPlan` to create a customized training plan.
+    * `generateTrainingPlan` initializes the training plan using `initializeTrainingPlan`.
+    * For each week, `generateTrainingPlan` determines the phase using `getPhase`.
+    * `generateTrainingPlan` calculates the weekly distance using `calculateWeeklyDistance`.
+    * `generateTrainingPlan` assigns training days using `assignTrainingDays`.
+    * `assignTrainingDays` calculates long run distances using `calculateLongRunDistance`.
+    * In the last week, `generateTrainingPlan` adds the marathon race activities using `addMarathonRace`.
+4. Response: The backend sends the generated training plan back to the frontend.
+5. Display Plan: The frontend displays the training plan to the user, including the details of each training session.
 
 ## Contributing
 
