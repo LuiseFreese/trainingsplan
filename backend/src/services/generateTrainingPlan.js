@@ -32,13 +32,13 @@ const generateTrainingPlan = (targetTime, fitnessLevel, trainingDays) => {
 
     plan[phase].push(weekPlan);
 
-    if (phase !== 'TAPER') {
+    if (phase !== 'RACE_WEEK') {
       currentWeeklyKM += (fitness.peakWeeklyKM - fitness.initialWeeklyKM) / (PHASES.BUILD.weeks + PHASES.PEAK.weeks);
     }
   }
 
   // Add the marathon race in the last week
-  const lastWeek = plan['TAPER'][plan['TAPER'].length - 1];
+  const lastWeek = plan['RACE_WEEK'][plan['RACE_WEEK'].length - 1];
   if (lastWeek) {
     // Clear existing activities in the last week
     lastWeek.days = [];
