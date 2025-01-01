@@ -6,6 +6,7 @@ const {
   restPhrases,
   yogaPhrases
 } = require('./phrases');
+const getRandomPhrase = require('./getRandomPhrase');
 
 const daysOfWeek = [
   { label: 'Monday', value: 0 },
@@ -56,35 +57,35 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
       if (!longRunAssigned && (dayIndex === trainingDays[trainingDays.length - 1] || phase === 'TAPER')) {
         distance = longRunDistance;
         description = `Run ${distance} km at ${paces.long} pace`;
-        options.push(longRunPhrases[week % longRunPhrases.length]);
+        options.push(getRandomPhrase(longRunPhrases));
         title = 'Long Run';
         longRunAssigned = true;
       } else if (!tempoRunAssigned) {
         distance = tempoRunDistance;
         description = `Run ${distance} km at ${paces.tempo} pace`;
-        options.push(tempoRunPhrases[week % tempoRunPhrases.length]);
+        options.push(getRandomPhrase(tempoRunPhrases));
         title = 'Tempo Run';
         tempoRunAssigned = true;
       } else if (!intervalAssigned) {
         const intervalPace = paces.interval[week % paces.interval.length];
-        description = `Run ${intervalTemplate.intervals} intervals of ${intervalTemplate.distance} km at ${intervalPace} pace. Each interval is followed by ${intervalTemplate.rest} recovery at ${paces.easy} pace`;
+        description = `Run ${intervalTemplate.intervals} intervals of ${intervalTemplate.distance} km at ${intervalPace} pace. Each interval is followed by ${intervalTemplate.rest} rest at ${paces.easy} pace`;
         options.push(`Total distance: ${intervalDistance} km`);
-        options.push(intervalPhrases[week % intervalPhrases.length]);
+        options.push(getRandomPhrase(intervalPhrases));
         title = 'Intervals';
         intervalAssigned = true;
       } else if (!yogaAssigned) {
         description = "Focus on recovery and mobility exercises";
-        options.push(yogaPhrases[week % yogaPhrases.length]);
+        options.push(getRandomPhrase(yogaPhrases));
         title = 'Yoga';
         yogaAssigned = true;
       } else {
         distance = easyRunDistance;
         description = `Run ${distance} km at ${paces.easy} pace`;
-        options.push(easyRunPhrases[week % easyRunPhrases.length]);
+        options.push(getRandomPhrase(easyRunPhrases));
         title = 'Easy Run';
       }
     } else {
-      description = restPhrases[week % restPhrases.length];
+      description = getRandomPhrase(restPhrases);
       title = 'Rest Day';
     }
 
