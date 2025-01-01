@@ -12,7 +12,7 @@ const generateTrainingPlan = (targetTime, fitnessLevel, trainingDays) => {
   validateTrainingDays(trainingDays);
 
   const totalWeeks = 16;
-  const marathonDistance = 42.195; 
+  const marathonDistance = 42.195; // Marathon distance in kilometers
 
   const fitness = FITNESS_LEVELS[fitnessLevel];
   const paces = TARGET_PACES[targetTime];
@@ -25,6 +25,10 @@ const generateTrainingPlan = (targetTime, fitnessLevel, trainingDays) => {
     const weekPlan = { weekNumber: week, weekKM: Math.round(weeklyDistance), days: [], phaseDescription: PHASES[phase].description };
 
     assignTrainingDays(weekPlan, weeklyDistance, phase, week, paces, trainingDays);
+
+    // Calculate the actual total distance run in the week
+    const actualWeeklyDistance = weekPlan.days.reduce((total, day) => total + (day.distance || 0), 0);
+    weekPlan.weekKM = Math.round(actualWeeklyDistance * 10) / 10; // Update the weekly distance to match the actual total
 
     plan[phase].push(weekPlan);
 

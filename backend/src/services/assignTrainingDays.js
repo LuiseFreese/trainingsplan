@@ -60,7 +60,8 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
       label: daysOfWeek[longRunDay].label,
       title: 'Long Run',
       description: `Run ${longRunDistance} km at ${paces.long} pace`,
-      options: [getRandomPhrase(longRunPhrases)]
+      options: [getRandomPhrase(longRunPhrases)],
+      distance: longRunDistance
     });
 
     weekPlan.days.push({
@@ -68,7 +69,8 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
       label: daysOfWeek[yogaDay].label,
       title: 'Yoga',
       description: "Focus on recovery and mobility exercises",
-      options: [getRandomPhrase(yogaPhrases)]
+      options: [getRandomPhrase(yogaPhrases)],
+      distance: 0
     });
 
     longRunAssigned = true;
@@ -80,7 +82,8 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
       label: daysOfWeek[saturdayIndex].label,
       title: 'Yoga',
       description: "Focus on recovery and mobility exercises",
-      options: [getRandomPhrase(yogaPhrases)]
+      options: [getRandomPhrase(yogaPhrases)],
+      distance: 0
     });
 
     yogaAssigned = true;
@@ -91,7 +94,8 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
       label: daysOfWeek[sundayIndex].label,
       title: 'Long Run',
       description: `Run ${longRunDistance} km at ${paces.long} pace`,
-      options: [getRandomPhrase(longRunPhrases)]
+      options: [getRandomPhrase(longRunPhrases)],
+      distance: longRunDistance
     });
 
     longRunAssigned = true;
@@ -147,7 +151,7 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
       title = 'Rest Day';
     }
 
-    weekPlan.days.push({ day: day.value, label, title, description, options });
+    weekPlan.days.push({ day: day.value, label, title, description, options, distance });
   }
 
   // Ensure all days are included in the correct order
@@ -159,7 +163,8 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
         label: day.label,
         title: 'Rest Day',
         description: getRandomPhrase(restPhrases),
-        options: []
+        options: [],
+        distance: 0
       });
     }
   }
