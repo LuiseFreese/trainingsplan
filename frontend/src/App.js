@@ -10,6 +10,9 @@ import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import WeekendIcon from '@mui/icons-material/Weekend';
 import TrophyIcon from '@mui/icons-material/EmojiEvents';
+import YogaFlowModal from './YogaFlowModal';
+import yogaFlows from './yogaFlows.json'; // Assuming yogaFlows.json is in the same directory
+import './App.css'; // Import the CSS file
 
 const fitnessLevels = ['beginner', 'intermediate', 'advanced'];
 const targetTimes = ['4:00', '4:30', '5:00'];
@@ -20,7 +23,7 @@ const daysOfWeek = [
   { label: 'Thursday', value: 3 },
   { label: 'Friday', value: 4 },
   { label: 'Saturday', value: 5 },
-  { label: 'Sunday', value: 6 },
+  { label: 'Sunday', value: 6 }
 ];
 
 const icons = {
@@ -30,7 +33,7 @@ const icons = {
   'Tempo Run': <DirectionsRunIcon />,
   Yoga: <SelfImprovementIcon />,
   'Easy Run': <DirectionsWalkIcon />,
-  Marathon: <TrophyIcon />,
+  Marathon: <TrophyIcon />
 };
 
 function App() {
@@ -39,6 +42,8 @@ function App() {
   const [trainingDays, setTrainingDays] = useState([2, 4, 5, 7]);
   const [startDate, setStartDate] = useState(new Date());
   const [plan, setPlan] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedYogaFlow, setSelectedYogaFlow] = useState(null);
 
   const handleGeneratePlan = async () => {
     try {
@@ -51,6 +56,19 @@ function App() {
     } catch (error) {
       console.error('Failed to fetch:', error);
     }
+  };
+
+  const handleCardClick = (day) => {
+    if (day.title === 'Yoga') {
+      const randomFlow = yogaFlows.yoga_flows[Math.floor(Math.random() * yogaFlows.yoga_flows.length)];
+      setSelectedYogaFlow(randomFlow);
+      setModalOpen(true);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+    setSelectedYogaFlow(null);
   };
 
   return (
@@ -77,6 +95,7 @@ function App() {
                 ))}
               </TextField>
             </Grid>
+
             <Grid item xs={12}>
               <TextField
                 select
@@ -93,6 +112,7 @@ function App() {
                 ))}
               </TextField>
             </Grid>
+
             <Grid item xs={12}>
               <TextField
                 select
@@ -101,9 +121,7 @@ function App() {
                 onChange={(e) => setTrainingDays(e.target.value)}
                 fullWidth
                 margin="normal"
-                SelectProps={{
-                  multiple: true,
-                }}
+                SelectProps={{ multiple: true }}
               >
                 {daysOfWeek.map((day) => (
                   <MenuItem key={day.value} value={day.value}>
@@ -112,6 +130,7 @@ function App() {
                 ))}
               </TextField>
             </Grid>
+
             <Grid item xs={12}>
               <DatePicker
                 label="Start Date"
@@ -120,12 +139,14 @@ function App() {
                 renderInput={(params) => <TextField {...params} fullWidth margin="normal" />}
               />
             </Grid>
+
             <Grid item xs={12}>
               <Button variant="contained" color="primary" onClick={handleGeneratePlan}>
                 Generate Plan
               </Button>
             </Grid>
           </Grid>
+
           {plan && (
             <Grid container spacing={2} style={{ marginTop: '20px' }}>
               {Object.keys(plan).map((phase) => (
@@ -134,17 +155,25 @@ function App() {
                     {phase}
                   </Typography>
                   {plan[phase].map((week) => (
-                    <Card key={week.weekNumber} style={{ marginBottom: '20px', boxShadow: '0 4px 8px 0 rgba(255, 105, 180, 0.2), 0 6px 20px 0 rgba(255, 105, 180, 0.19)' }}>
+                    <Card
+                      key={week.weekNumber}
+                      style={{
+                        marginBottom: '20px',
+                        boxShadow:
+                          '0 4px 8px 0 rgba(255, 105, 180, 0.2), 0 6px 20px 0 rgba(255, 105, 180, 0.19)'
+                      }}
+                    >
                       <CardHeader title={`Week ${week.weekNumber} - ${week.weekKM} km`} />
                       <CardContent>
                         <Grid container spacing={2}>
                           {week.days.map((day) => (
                             <Grid item xs={12} sm={6} md={4} key={day.day}>
-                              <Card style={{ height: '100%', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1)' }}>
+                              <Card
+                                className="day-card"
+                                onClick={() => handleCardClick(day)}
+                              >
                                 <CardContent>
-                                  <Typography variant="h6">
-                                    {day.label}
-                                  </Typography>
+                                  <Typography variant="h6">{day.label}</Typography>
                                   <Typography variant="body1">
                                     {icons[day.title] || icons['Easy Run']} {day.title}
                                   </Typography>
@@ -168,6 +197,8 @@ function App() {
               ))}
             </Grid>
           )}
+
+          <YogaFlowModal open={modalOpen} handleClose={handleCloseModal} yogaFlow={selectedYogaFlow} />
         </Container>
       </LocalizationProvider>
     </ThemeProvider>

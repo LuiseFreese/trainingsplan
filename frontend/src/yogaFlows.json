@@ -1,0 +1,222 @@
+{
+    "yoga_flows": [
+        {
+            "name": "Hamstring Recovery Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Standing Forward Fold (2 mins)",
+                "Halfway Lift (30 secs)",
+                "Pyramid Pose (1 min each leg)",
+                "Wide-Legged Forward Fold (2 mins)",
+                "Seated Forward Bend (2 mins)",
+                "Reclined Hamstring Stretch (1 min each leg)"
+            ]
+        },
+        {
+            "name": "Hip Opener Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Child's Pose (1 min)",
+                "Low Lunge (1 min each leg)",
+                "Lizard Pose (1 min each leg)",
+                "Pigeon Pose (1 min each leg)",
+                "Butterfly Pose (2 mins)",
+                "Supine Figure Four Stretch (1 min each leg)"
+            ]
+        },
+        {
+            "name": "Quad Stretch Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Mountain Pose (30 secs)",
+                "Dancer's Pose (1 min each leg)",
+                "Low Lunge with Quad Stretch (1 min each leg)",
+                "Camel Pose (1 min)",
+                "Hero Pose (2 mins)"
+            ]
+        },
+        {
+            "name": "Post-Run Cool Down Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Downward Dog (1 min)",
+                "Runner's Lunge (1 min each leg)",
+                "Pigeon Pose (1 min each leg)",
+                "Seated Forward Fold (2 mins)",
+                "Supine Twist (1 min each side)",
+                "Savasana (3 mins)"
+            ]
+        },
+        {
+            "name": "Pre-Run Warm-Up Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Cat-Cow Stretch (1 min)",
+                "Sun Salutations (5 rounds, 5 mins)",
+                "Low Lunge with Twist (1 min each leg)",
+                "Chair Pose (1 min)",
+                "High Knees (Dynamic, 1 min)"
+            ]
+        },
+        {
+            "name": "Calf Relief Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Downward Dog (1 min)",
+                "Runner's Lunge with Heel Lift (1 min each leg)",
+                "Seated Calf Stretch (2 mins each leg)",
+                "Wall Calf Stretch (2 mins each leg)"
+            ]
+        },
+        {
+            "name": "Glute Activation Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Bridge Pose (1 min)",
+                "Low Lunge with Glute Squeeze (1 min each leg)",
+                "Chair Pose (1 min)",
+                "Warrior III (1 min each leg)",
+                "Figure Four Stretch (1 min each leg)"
+            ]
+        },
+        {
+            "name": "IT Band Release Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Standing Forward Fold with Side Stretch (1 min each side)",
+                "Half Splits (1 min each leg)",
+                "Twisted Triangle Pose (1 min each leg)",
+                "Supine IT Band Stretch (2 mins each leg)"
+            ]
+        },
+        {
+            "name": "Core Strengthening Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Plank Pose (1 min)",
+                "Side Plank (30 secs each side)",
+                "Boat Pose (1 min)",
+                "Low Boat to High Boat Flow (1 min)",
+                "Bridge Pose (1 min)"
+            ]
+        },
+        {
+            "name": "Ankle Mobility Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Hero Pose (1 min)",
+                "Seated Ankle Rolls (30 secs each direction)",
+                "Low Lunge with Ankle Circles (1 min each leg)",
+                "Downward Dog with Heel Pumps (1 min)"
+            ]
+        },
+        {
+            "name": "Full Body Runner's Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Cat-Cow Stretch (1 min)",
+                "Downward Dog (1 min)",
+                "Low Lunge with Twist (1 min each leg)",
+                "Pigeon Pose (1 min each leg)",
+                "Seated Forward Bend (2 mins)",
+                "Supine Twist (1 min each side)"
+            ]
+        },
+        {
+            "name": "Hamstring and Calf Focus",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Standing Forward Fold (2 mins)",
+                "Pyramid Pose (1 min each leg)",
+                "Half Splits (1 min each leg)",
+                "Seated Calf Stretch (2 mins each leg)",
+                "Downward Dog with Heel Pumps (1 min)"
+            ]
+        },
+        {
+            "name": "Dynamic Pre-Run Stretch",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Sun Salutations (5 rounds, 5 mins)",
+                "Low Lunge with Arm Circles (1 min each leg)",
+                "Dynamic Warrior II (30 secs each side)",
+                "Chair Pose with Twist (1 min)"
+            ]
+        },
+        {
+            "name": "Deep Stretch Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Child's Pose (2 mins)",
+                "Low Lunge with Side Stretch (1 min each leg)",
+                "Lizard Pose (1 min each leg)",
+                "Pigeon Pose (1 min each leg)",
+                "Butterfly Pose (2 mins)"
+            ]
+        },
+        {
+            "name": "Runner's Recovery Sequence",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Supine Hamstring Stretch (2 mins each leg)",
+                "Low Lunge (1 min each leg)",
+                "Twisted Triangle Pose (1 min each leg)",
+                "Supine Twist (1 min each side)",
+                "Savasana (3 mins)"
+            ]
+        },
+        {
+            "name": "Strength and Stretch Combo",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Plank Pose (1 min)",
+                "Chair Pose (1 min)",
+                "Warrior II (1 min each leg)",
+                "Triangle Pose (1 min each leg)",
+                "Downward Dog (1 min)"
+            ]
+        },
+        {
+            "name": "Evening Wind-Down Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Child's Pose (1 min)",
+                "Reclined Twist (1 min each side)",
+                "Legs-Up-The-Wall Pose (5 mins)",
+                "Savasana (3 mins)"
+            ]
+        },
+        {
+            "name": "Morning Energy Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Sun Salutations (5 rounds, 5 mins)",
+                "Chair Pose (1 min)",
+                "Warrior I (1 min each leg)",
+                "Forward Fold (1 min)"
+            ]
+        },
+        {
+            "name": "Upper Body Focus Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Plank Pose (1 min)",
+                "Side Plank (30 secs each side)",
+                "Cobra Pose (1 min)",
+                "Child's Pose (1 min)",
+                "Cat-Cow Stretch (1 min)"
+            ]
+        },
+        {
+            "name": "Lower Back Release Flow",
+            "duration": "10-15 minutes",
+            "poses": [
+                "Cat-Cow Stretch (1 min)",
+                "Downward Dog (1 min)",
+                "Child's Pose (1 min)",
+                "Supine Twist (1 min each side)",
+                "Bridge Pose (1 min)"
+            ]
+        }
+    ]
+}
