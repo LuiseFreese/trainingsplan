@@ -7,9 +7,8 @@ This application generates a marathon training plan based on the user's target t
 1. Generates a 16-week marathon training plan
 2. Customizes the plan based on the user's target time, fitness level, and preferred training days
 3. Includes different types of training sessions: long runs, tempo runs, interval training, easy runs, yoga, and rest days
-
-
-
+4. Export the training plan as an ICS file
+5. Modals for long runs and yoga days with detailed instructions
 
 ## Installation
 
@@ -47,6 +46,7 @@ npm start
 * Open the application in your browser at http://localhost:3000
 * Select your fitness level, target time, and preferred training days
 * Select **Generate Plan** to create your customized marathon training plan
+* Select **Export to calendar** to create an .ics file download that you can import into Outlook
 
 ## Training Plan Logic
 
@@ -56,10 +56,11 @@ The training plan is generated based on the following logic:
 
 The plan is divided into four phases: Base, Build, Peak, and Taper.
 
-* Base: 4 weeks, focuses on building a foundation with lower mileage
-* Build: 8 weeks, increases mileage and intensity
-* Peak: 3 weeks, reaches the highest mileage and intensity
-* Taper: 1 week, reduces mileage to allow for recovery before the marathon.
+* Base: 4 weeks (Weeks 1-4), focuses on building a foundation with lower mileage
+* Build: 5 weeks (Weeks 5-9), increases mileage and intensity
+* Peak: 3 weeks (Weeks 10-12), reaches the highest mileage and intensity
+* Taper: 3 weeks (Weeks 13-15), reduces mileage to allow for recovery before the marathon
+* Race Week: 1 week (Week 16), includes final preparations and the marathon race
 
 ### Training Sessions: Each week includes a variety of training sessions:
 
@@ -84,9 +85,9 @@ The paces for different types of runs are determined based on the user's target 
 
 The plan is customized based on the user's fitness level and preferred training days. The training sessions are assigned to the selected days, ensuring a balanced distribution of different types of runs.
 
-### Last Week Adjustments
+### Last Weeks Adjustments
 
-In the last week (Taper phase), the plan includes an easy run and a yoga session before the marathon race to ensure the user is well-rested and prepared.
+In the last weeks (Taper phase and Race Week), the plan includes easy runs and yoga sessions before the marathon race to ensure the user is well-rested and prepared.
 
 ## How It Works
 
