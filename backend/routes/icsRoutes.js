@@ -7,9 +7,12 @@ const { generateICS } = require(path.resolve(__dirname, '../src/services/icsServ
 
 router.get('/', async (req, res) => {
     const trainingPlanFolder = req.query.folder || '500'; // Default to '500' if not provided
-    const startDate = new Date(req.query.startDate || '2025-01-01'); // Default to January 1, 2025 if not provided
+    const startDate = new Date(req.query.startDate); // Use the provided start date
+    const fitnessLevel = req.query.fitnessLevel || 'beginner'; // Default to 'beginner' if not provided
+    const targetTime = req.query.targetTime || '5:00'; // Default to '5:00' if not provided
     try {
-        const icsData = await generateICS(trainingPlanFolder, startDate);
+        console.log(`Generating ICS for folder: ${trainingPlanFolder}, start date: ${startDate}, fitness level: ${fitnessLevel}, target time: ${targetTime}`);
+        const icsData = await generateICS(trainingPlanFolder, startDate, fitnessLevel, targetTime);
         res.setHeader('Content-Disposition', `attachment; filename=trainingplan-M-${trainingPlanFolder}.ics`);
         res.setHeader('Content-Type', 'text/calendar');
         res.send(icsData);
