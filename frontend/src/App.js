@@ -71,6 +71,34 @@ function App() {
     setSelectedYogaFlow(null);
   };
 
+  const handleExportICS = async () => {
+    try {
+      const response = await fetch('http://localhost:3000/api/ics?folder=500&startDate=2025-01-01', {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      if (!response.ok) {
+        throw new Error('Failed to fetch ICS data');
+      }
+      const icsText = await response.text();
+
+      // Create a blob for the ICS file
+      const blob = new Blob([icsText], { type: 'text/calendar' });
+      const url = URL.createObjectURL(blob);
+
+      // Create a temporary link to trigger download
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'trainingplan.ics');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error('Export ICS error:', err);
+    }
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -141,9 +169,18 @@ function App() {
             </Grid>
 
             <Grid item xs={12}>
-              <Button variant="contained" color="primary" onClick={handleGeneratePlan}>
-                Generate Plan
-              </Button>
+              <Grid container spacing={2}>
+                <Grid item>
+                  <Button variant="contained" color="primary" onClick={handleGeneratePlan} style={{ boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}>
+                    Generate Plan
+                  </Button>
+                </Grid>
+                <Grid item>
+                  <Button variant="outlined" color="secondary" onClick={handleExportICS} style={{ marginLeft: '20px', borderColor: '#ff69b4', color: '#ff69b4', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}>
+                    Export to Calendar
+                  </Button>
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
 

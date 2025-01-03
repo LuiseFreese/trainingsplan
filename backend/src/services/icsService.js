@@ -1,31 +1,36 @@
 const fs = require('fs');
 const path = require('path');
 const { createEvents } = require('ics');
-const { parseHTML } = require('./htmlService');
 
 const generateICS = async (trainingPlanFolder, startDate) => {
     try {
-        const weeks = await parseHTML(trainingPlanFolder);
-        const events = [];
+        // Adjust the path to correctly reference the JSON file
+        const filePath = path.join(__dirname, `../../../assets/output/gen-trainingplan-M-${trainingPlanFolder}.json`);
+        console.log(`Reading file from: ${filePath}`);
+        const jsonData = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        console.log('JSON data:', jsonData);
 
-        weeks.forEach((week) => {
-            week.days.forEach((day) => {
-                const { title, description, options } = day;
-                const date = new Date(startDate);
-                date.setDate(date.getDate() + (week.weekNumber - 1) * 7 + ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'].indexOf(day.day));
-                let eventDescription = `${description}\n\n${options.join('\n\n')}`;
-                const soundcloudLink = options.find(option => option.includes('https://soundcloud.com/'));
-                if (soundcloudLink) {
-                    eventDescription = eventDescription.replace(`Set Empfehlung ${soundcloudLink}`, '').trim(); 
-                }
-                events.push({
-                    start: [date.getFullYear(), date.getMonth() + 1, date.getDate()],
-                    duration: { days: 1 },
-                    title: `Week ${week.weekNumber} - ${title}`, 
-                    description: eventDescription,
-                    location: '',
-                    status: 'CONFIRMED',
-                    busyStatus: 'FREE', 
+        const events = [];
+        const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+        Object.keys(jsonData).forEach(phase => {
+            jsonData[phase].forEach(week => {
+                week.days.forEach(day => {
+                    const { title, description, options, distance } = day;
+                    const eventDate = new Date(startDate);
+                    eventDate.setDate(eventDate.getDate() + (week.weekNumber - 1) * 7 + daysOfWeek.indexOf(day.label));
+
+                    const eventDescription = `${description}\n\n${options.join('\n')}\n\nDistance: ${distance} km`;
+
+                    events.push({
+                        start: [eventDate.getFullYear(), eventDate.getMonth() + 1, eventDate.getDate()],
+                        duration: { days: 1 },
+                        title: `Week ${week.weekNumber} - ${title}`,
+                        description: eventDescription,
+                        location: '',
+                        status: 'CONFIRMED',
+                        busyStatus: 'FREE',
+                    });
                 });
             });
         });
@@ -35,15 +40,9 @@ const generateICS = async (trainingPlanFolder, startDate) => {
         return new Promise((resolve, reject) => {
             createEvents(events, (error, value) => {
                 if (error) {
+                    console.error('Error creating events:', error);
                     reject(error);
                 } else {
-                    const outputDir = path.join(__dirname, `../../assets/output`);
-                    if (!fs.existsSync(outputDir)) {
-                        fs.mkdirSync(outputDir, { recursive: true });
-                    }
-                    const outputFilePath = path.join(outputDir, `trainingplan-M-${trainingPlanFolder}.ics`);
-                    fs.writeFileSync(outputFilePath, value);
-                    console.log(`ICS file written to: ${outputFilePath}`);
                     resolve(value);
                 }
             });
