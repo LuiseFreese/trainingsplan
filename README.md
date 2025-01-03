@@ -91,7 +91,7 @@ In the last weeks (Taper phase and Race Week), the plan includes easy runs and y
 
 ## How It Works
 
-### Libraries Used
+### Libraries Used    
 
 * Express: A web framework for Node.js used to create the backend server.
 * React: A JavaScript library for building user interfaces, used for the frontend

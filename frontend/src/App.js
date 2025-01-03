@@ -4,46 +4,16 @@ import { Container, TextField, Button, MenuItem, Grid, Card, CardContent, Typogr
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import theme from './theme';
-import RepeatIcon from '@mui/icons-material/Repeat';
-import DirectionsRunIcon from '@mui/icons-material/DirectionsRun';
-import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
-import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
-import WeekendIcon from '@mui/icons-material/Weekend';
-import TrophyIcon from '@mui/icons-material/EmojiEvents';
 import YogaFlowModal from './YogaFlowModal'; // Import the YogaFlowModal component
 import LongRunModal from './LongRunModal'; // Import the LongRunModal component
 import yogaFlows from './yogaFlows.json'; // Assuming yogaFlows.json is in the same directory
 import trainingAdvice from './trainingAdvice.json'; // Import the training advice JSON
+import { fitnessLevels, targetTimes, daysOfWeek } from './constants'; // Import constants
+import { icons } from './icons'; // Import icons
+import { phaseMapping } from './phaseMapping'; // Import phase mapping
+import { handleGeneratePlan } from './handleGeneratePlan'; // Import handleGeneratePlan function
 import './App.css'; // Import the CSS file
 import { exportICS } from './exportICS'; // Import the exportICS function
-
-const fitnessLevels = ['beginner', 'intermediate', 'advanced'];
-const targetTimes = ['4:00', '4:30', '5:00'];
-const daysOfWeek = [
-  { label: 'Monday', value: 0 },
-  { label: 'Tuesday', value: 1 },
-  { label: 'Wednesday', value: 2 },
-  { label: 'Thursday', value: 3 },
-  { label: 'Friday', value: 4 },
-  { label: 'Saturday', value: 5 },
-  { label: 'Sunday', value: 6 }
-];
-
-const icons = {
-  'Rest Day': <WeekendIcon />,
-  'Long Run': <DirectionsRunIcon />,
-  Intervals: <RepeatIcon />,
-  'Tempo Run': <DirectionsRunIcon />,
-  Yoga: <SelfImprovementIcon />,
-  'Easy Run': <DirectionsWalkIcon />,
-  Marathon: <TrophyIcon />
-};
-
-const phaseMapping = {
-  BASE: 'basePhase',
-  BUILD: 'buildPhase',
-  PEAK: 'peakPhase'
-};
 
 function App() {
   const [fitnessLevel, setFitnessLevel] = useState('beginner');
@@ -56,19 +26,6 @@ function App() {
   const [longRunModalOpen, setLongRunModalOpen] = useState(false);
   const [longRunAdvice, setLongRunAdvice] = useState(null);
   const [generalTip, setGeneralTip] = useState('');
-
-  const handleGeneratePlan = async () => {
-    try {
-      const response = await fetch(`http://localhost:3000/api/generate-training-plan?targetTime=${targetTime}&fitnessLevel=${fitnessLevel}&trainingDays=${trainingDays.join(',')}`);
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      const data = await response.json();
-      setPlan(data);
-    } catch (error) {
-      console.error('Failed to fetch:', error);
-    }
-  };
 
   const handleCardClick = (day, phase) => {
     if (day.title === 'Yoga') {
@@ -174,7 +131,7 @@ function App() {
             <Grid item xs={12}>
               <Grid container spacing={2}>
                 <Grid item>
-                  <Button variant="contained" color="primary" onClick={handleGeneratePlan} style={{ boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}>
+                  <Button variant="contained" color="primary" onClick={() => handleGeneratePlan(targetTime, fitnessLevel, trainingDays, setPlan)} style={{ boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}>
                     Generate Plan
                   </Button>
                 </Grid>
