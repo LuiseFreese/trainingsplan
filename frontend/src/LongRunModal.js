@@ -1,8 +1,8 @@
 import React from 'react';
 import { Modal, Box, Typography, List, ListItem, ListItemText } from '@mui/material';
 
-const YogaFlowModal = ({ open, handleClose, yogaFlow }) => {
-  if (!yogaFlow) return null;
+const LongRunModal = ({ open, handleClose, advice, generalTip }) => {
+  if (!advice) return null;
 
   return (
     <Modal open={open} onClose={handleClose}>
@@ -18,21 +18,21 @@ const YogaFlowModal = ({ open, handleClose, yogaFlow }) => {
         }}
       >
         <Typography variant="h6" component="h2">
-          {yogaFlow.name}
-        </Typography>
-        <Typography variant="subtitle1" component="p">
-          Duration: {yogaFlow.duration}
+          Long Run Advice
         </Typography>
         <List>
-          {yogaFlow.poses.map((pose, index) => (
+          {advice.map((tip, index) => (
             <ListItem key={index}>
-              <ListItemText primary={`• ${pose}`} />
+              <ListItemText primary={`• ${tip}`} />
             </ListItem>
           ))}
+          <ListItem>
+            <ListItemText primary={`• Tip: ${generalTip}`} />
+          </ListItem>
         </List>
       </Box>
     </Modal>
   );
 };
 
-export default YogaFlowModal;
+export default LongRunModal;

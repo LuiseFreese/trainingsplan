@@ -10,8 +10,10 @@ import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement';
 import WeekendIcon from '@mui/icons-material/Weekend';
 import TrophyIcon from '@mui/icons-material/EmojiEvents';
-import YogaFlowModal from './YogaFlowModal';
+import YogaFlowModal from './YogaFlowModal'; // Import the YogaFlowModal component
+import LongRunModal from './LongRunModal'; // Import the LongRunModal component
 import yogaFlows from './yogaFlows.json'; // Assuming yogaFlows.json is in the same directory
+import trainingAdvice from './trainingAdvice.json'; // Import the training advice JSON
 import './App.css'; // Import the CSS file
 import { exportICS } from './exportICS'; // Import the exportICS function
 
@@ -37,6 +39,12 @@ const icons = {
   Marathon: <TrophyIcon />
 };
 
+const phaseMapping = {
+  BASE: 'basePhase',
+  BUILD: 'buildPhase',
+  PEAK: 'peakPhase'
+};
+
 function App() {
   const [fitnessLevel, setFitnessLevel] = useState('beginner');
   const [targetTime, setTargetTime] = useState('5:00');
@@ -45,6 +53,9 @@ function App() {
   const [plan, setPlan] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedYogaFlow, setSelectedYogaFlow] = useState(null);
+  const [longRunModalOpen, setLongRunModalOpen] = useState(false);
+  const [longRunAdvice, setLongRunAdvice] = useState(null);
+  const [generalTip, setGeneralTip] = useState('');
 
   const handleGeneratePlan = async () => {
     try {
@@ -59,17 +70,36 @@ function App() {
     }
   };
 
-  const handleCardClick = (day) => {
+  const handleCardClick = (day, phase) => {
     if (day.title === 'Yoga') {
       const randomFlow = yogaFlows.yoga_flows[Math.floor(Math.random() * yogaFlows.yoga_flows.length)];
       setSelectedYogaFlow(randomFlow);
       setModalOpen(true);
+    } else if (day.title === 'Long Run') {
+      console.log(`Target Time: ${targetTime}, Phase: ${phase}`);
+      const mappedPhase = phaseMapping[phase];
+      const adviceData = trainingAdvice.trainingAdvice[targetTime];
+      if (adviceData && adviceData[mappedPhase]) {
+        const advice = adviceData[mappedPhase].advice;
+        const randomTip = trainingAdvice.generalTips[Math.floor(Math.random() * trainingAdvice.generalTips.length)];
+        setLongRunAdvice(advice);
+        setGeneralTip(randomTip);
+        setLongRunModalOpen(true);
+      } else {
+        console.error('Invalid target time or phase:', targetTime, phase);
+      }
     }
   };
 
-  const handleCloseModal = () => {
+  const handleCloseYogaModal = () => {
     setModalOpen(false);
     setSelectedYogaFlow(null);
+  };
+
+  const handleCloseLongRunModal = () => {
+    setLongRunModalOpen(false);
+    setLongRunAdvice(null);
+    setGeneralTip('');
   };
 
   return (
@@ -180,7 +210,7 @@ function App() {
                             <Grid item xs={12} sm={6} md={4} key={day.day}>
                               <Card
                                 className="day-card"
-                                onClick={() => handleCardClick(day)}
+                                onClick={() => handleCardClick(day, phase)}
                               >
                                 <CardContent>
                                   <Typography variant="h6">{day.label}</Typography>
@@ -208,7 +238,8 @@ function App() {
             </Grid>
           )}
 
-          <YogaFlowModal open={modalOpen} handleClose={handleCloseModal} yogaFlow={selectedYogaFlow} />
+          <YogaFlowModal open={modalOpen} handleClose={handleCloseYogaModal} yogaFlow={selectedYogaFlow} />
+          <LongRunModal open={longRunModalOpen} handleClose={handleCloseLongRunModal} advice={longRunAdvice} generalTip={generalTip} />
         </Container>
       </LocalizationProvider>
     </ThemeProvider>

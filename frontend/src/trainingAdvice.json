@@ -1,0 +1,80 @@
+{
+    "trainingAdvice": {
+        "4:00": {
+            "basePhase": {
+                "advice": [
+                    "Long Run Pace: 6:30 min/km.",
+                    "Run at an easy, conversational pace, focusing on covering distance rather than speed.",
+                    "Keep effort light and relaxed to build endurance."
+                ]
+            },
+            "buildPhase": {
+                "advice": [
+                    "Long Run Pace: 6:30 min/km, with some segments at tempo pace (5:00 min/km).",
+                    "Incorporate marathon pace (6:00 min/km) segments to simulate race conditions.",
+                    "Prioritize steady pacing and form improvement."
+                ]
+            },
+            "peakPhase": {
+                "advice": [
+                    "Long Run Pace: 6:30 min/km.",
+                    "Include marathon pace (6:00 min/km) for extended segments.",
+                    "Use these runs to test race-day nutrition and pacing strategies."
+                ]
+            }
+        },
+        "4:30": {
+            "basePhase": {
+                "advice": [
+                    "Long Run Pace: 7:00 min/km.",
+                    "Run at a comfortable pace, focusing on building aerobic endurance.",
+                    "Ensure you can speak in full sentences during the run."
+                ]
+            },
+            "buildPhase": {
+                "advice": [
+                    "Long Run Pace: 7:00 min/km, with sections at marathon pace (6:30 min/km).",
+                    "Add some rolling hills or varied terrain for strength building.",
+                    "Focus on consistent pacing and energy management."
+                ]
+            },
+            "peakPhase": {
+                "advice": [
+                    "Long Run Pace: 7:00 min/km.",
+                    "Incorporate marathon pace (6:30 min/km) into the latter portions of the run.",
+                    "Simulate race conditions with gear, fueling, and pacing."
+                ]
+            }
+        },
+        "5:00": {
+            "basePhase": {
+                "advice": [
+                    "Long Run Pace: 7:30 min/km.",
+                    "Focus on slow, steady effort to build time on feet.",
+                    "Avoid pushing pace; keep it relaxed and easy."
+                ]
+            },
+            "buildPhase": {
+                "advice": [
+                    "Long Run Pace: 7:30 min/km, incorporating marathon pace (7:00 min/km) segments.",
+                    "Practice holding a steady pace for extended periods.",
+                    "Test nutrition and hydration strategies."
+                ]
+            },
+            "peakPhase": {
+                "advice": [
+                    "Long Run Pace: 7:30 min/km.",
+                    "Include marathon pace (7:00 min/km) during middle or late portions.",
+                    "Use these runs to simulate race scenarios, including mental focus."
+                ]
+            }
+        }
+    },
+    "generalTips": [
+        "Always warm up before and cool down after long runs to prevent injury.",
+        "Hydrate and fuel appropriately during long runs to prepare for race day.",
+        "Incorporate recovery days or easy runs following long runs to optimize adaptation.",
+        "Listen to your body and adjust pacing or effort if needed to avoid overtraining.",
+        "Use long runs to refine gear, nutrition, and hydration strategies for race day."
+    ]
+}
