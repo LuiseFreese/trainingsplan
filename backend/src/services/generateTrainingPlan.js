@@ -7,6 +7,15 @@ const validateTrainingDays = require('./validateTrainingDays');
 const initializeTrainingPlan = require('./initializeTrainingPlan');
 const calculateWeeklyDistance = require('./calculateWeeklyDistance');
 const addMarathonRace = require('./addMarathonRace');
+const path = require('path');
+const fs = require('fs');
+const phaseMapping = require('./phaseMapping'); // Import phaseMapping
+
+const trainingAdvicePath = path.resolve(__dirname, '../../../data/trainingAdvice.json');
+const yogaFlowsPath = path.resolve(__dirname, '../../../data/yogaFlows.json');
+
+const trainingAdvice = JSON.parse(fs.readFileSync(trainingAdvicePath, 'utf8'));
+const yogaFlows = JSON.parse(fs.readFileSync(yogaFlowsPath, 'utf8'));
 
 const generateTrainingPlan = (targetTime, fitnessLevel, trainingDays) => {
   validateTrainingDays(trainingDays);
@@ -29,6 +38,28 @@ const generateTrainingPlan = (targetTime, fitnessLevel, trainingDays) => {
     // Calculate the actual total distance run in the week
     const actualWeeklyDistance = weekPlan.days.reduce((total, day) => total + (day.distance || 0), 0);
     weekPlan.weekKM = Math.round(actualWeeklyDistance * 10) / 10; // Update the weekly distance to match the actual total
+
+    // Add detailed advice to the options array
+    weekPlan.days.forEach(day => {
+      if (day.title === 'Long Run') {
+        const mappedPhase = phaseMapping[phase];
+        const adviceData = trainingAdvice.trainingAdvice[targetTime];
+        if (adviceData && adviceData[mappedPhase]) {
+          const advice = adviceData[mappedPhase].advice;
+          day.options = day.options || [];
+          day.options.push(...advice);
+          const randomTip = trainingAdvice.generalTips[Math.floor(Math.random() * trainingAdvice.generalTips.length)];
+          day.options.push(`Tip: ${randomTip}`);
+        }
+      }
+
+      if (day.title === 'Yoga') {
+        const randomFlow = yogaFlows.yoga_flows[Math.floor(Math.random() * yogaFlows.yoga_flows.length)];
+        day.options = day.options || [];
+        day.options.push(randomFlow.description);
+        day.options.push(...randomFlow.poses);
+      }
+    });
 
     plan[phase].push(weekPlan);
 

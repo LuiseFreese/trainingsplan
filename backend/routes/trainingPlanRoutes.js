@@ -5,9 +5,9 @@ const path = require('path');
 const { generateTrainingPlan } = require('../src/services/trainingPlanGenerator');
 
 router.get('/', (req, res) => {
-    const targetTime = req.query.targetTime || '4:30'; // Default to '4:30' if not provided
-    const fitnessLevel = req.query.fitnessLevel || 'intermediate'; // Default to 'intermediate' if not provided
-    const trainingDays = req.query.trainingDays ? req.query.trainingDays.split(',').map(Number) : [2, 4, 5, 7]; // Default to [2, 4, 5, 7] if not provided
+    const targetTime = req.query.targetTime || '4:30'; 
+    const fitnessLevel = req.query.fitnessLevel || 'intermediate'; 
+    const trainingDays = req.query.trainingDays ? req.query.trainingDays.split(',').map(Number) : [2, 4, 5, 7]; 
 
     try {
         const plan = generateTrainingPlan(targetTime, fitnessLevel, trainingDays);

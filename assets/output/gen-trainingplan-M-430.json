@@ -8,7 +8,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Rest. It's part of the plan 🛋️",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },
@@ -16,7 +16,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },
@@ -34,7 +34,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest. You need it 💡",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         },
@@ -45,7 +45,7 @@
           "description": "Run 5 intervals of 0.6 km at 5:15 min/km pace. Each interval is followed by 1:30 min rest at 6:30 min/km pace",
           "options": [
             "Total distance: 4.3 km",
-            "Intervals help you run faster and more efficiently ✅"
+            "Focus on maintaining good form during each interval ✨"
           ],
           "distance": 4.3
         },
@@ -55,7 +55,11 @@
           "title": "Long Run",
           "description": "Run 6 km at 7:00 min/km pace",
           "options": [
-            "Long runs are key to your marathon success 🚀"
+            "Long runs are key to your marathon success 🚀",
+            "Long Run Pace: 7:00 min/km.",
+            "Run at a comfortable pace, focusing on building aerobic endurance.",
+            "Ensure you can speak in full sentences during the run.",
+            "Tip: Hydrate and fuel appropriately during long runs to prepare for race day."
           ],
           "distance": 6
         },
@@ -78,7 +82,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },
@@ -86,7 +90,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Rest. You need it 💡",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },
@@ -115,7 +119,7 @@
           "description": "Run 4 intervals of 0.8 km at 5:00 min/km pace. Each interval is followed by 1:00 min rest at 6:30 min/km pace",
           "options": [
             "Total distance: 3.9 km",
-            "Intervals help you run faster and more efficiently ✅"
+            "Focus on maintaining good form during each interval ✨"
           ],
           "distance": 3.9
         },
@@ -125,7 +129,11 @@
           "title": "Long Run",
           "description": "Run 7 km at 7:00 min/km pace",
           "options": [
-            "Focus on a steady pace and enjoy the run ✨"
+            "Focus on a steady pace and enjoy the run ✨",
+            "Long Run Pace: 7:00 min/km.",
+            "Run at a comfortable pace, focusing on building aerobic endurance.",
+            "Ensure you can speak in full sentences during the run.",
+            "Tip: Incorporate recovery days or easy runs following long runs to optimize adaptation."
           ],
           "distance": 7
         },
@@ -133,7 +141,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         }
@@ -148,7 +156,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Rest. You need it 💡",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         },
@@ -166,7 +174,7 @@
           "title": "Tempo Run",
           "description": "Run 3 km at 5:30 min/km pace",
           "options": [
-            "Boost your speed endurance and get comfortable with faster paces 🏃‍♀️"
+            "Tempo runs help you run faster for longer ⏩"
           ],
           "distance": 3
         },
@@ -174,7 +182,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },
@@ -195,7 +203,11 @@
           "title": "Long Run",
           "description": "Run 8 km at 7:00 min/km pace",
           "options": [
-            "Focus on a steady pace and enjoy the run ✨"
+            "Build your endurance and practice your nutrition and hydration strategy🍌",
+            "Long Run Pace: 7:00 min/km.",
+            "Run at a comfortable pace, focusing on building aerobic endurance.",
+            "Ensure you can speak in full sentences during the run.",
+            "Tip: Incorporate recovery days or easy runs following long runs to optimize adaptation."
           ],
           "distance": 8
         },
@@ -203,7 +215,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         }
@@ -226,7 +238,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest. You need it 💡",
           "options": [],
           "distance": 0
         },
@@ -236,7 +248,7 @@
           "title": "Tempo Run",
           "description": "Run 3 km at 5:30 min/km pace",
           "options": [
-            "Maintain a challenging but sustainable pace 🥵"
+            "Boost your speed endurance and get comfortable with faster paces 🏃‍♀️"
           ],
           "distance": 3
         },
@@ -244,7 +256,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },
@@ -255,7 +267,7 @@
           "description": "Run 6 intervals of 0.4 km at 5:00 min/km pace. Each interval is followed by 2:00 min rest at 6:30 min/km pace",
           "options": [
             "Total distance: 4.4 km",
-            "Intervals help you run faster and more efficiently ✅"
+            "Focus on maintaining good form during each interval ✨"
           ],
           "distance": 4.4
         },
@@ -265,7 +277,11 @@
           "title": "Long Run",
           "description": "Run 10 km at 7:00 min/km pace",
           "options": [
-            "Long runs are key to your marathon success 🚀"
+            "Focus on a steady pace and enjoy the run ✨",
+            "Long Run Pace: 7:00 min/km.",
+            "Run at a comfortable pace, focusing on building aerobic endurance.",
+            "Ensure you can speak in full sentences during the run.",
+            "Tip: Use long runs to refine gear, nutrition, and hydration strategies for race day."
           ],
           "distance": 10
         },
@@ -290,7 +306,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },
@@ -298,7 +314,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day 🥳",
           "options": [],
           "distance": 0
         },
@@ -308,7 +324,7 @@
           "title": "Tempo Run",
           "description": "Run 5 km at 5:30 min/km pace",
           "options": [
-            "Tempo runs help you run faster for longer ⏩"
+            "Maintain a challenging but sustainable pace 🥵"
           ],
           "distance": 5
         },
@@ -316,7 +332,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Rest. You need it 💡",
           "options": [],
           "distance": 0
         },
@@ -327,7 +343,7 @@
           "description": "Run 5 intervals of 0.6 km at 5:15 min/km pace. Each interval is followed by 1:30 min rest at 6:30 min/km pace",
           "options": [
             "Total distance: 4.3 km",
-            "Improve your speed and running economy 🚀"
+            "Focus on maintaining good form during each interval ✨"
           ],
           "distance": 4.3
         },
@@ -337,7 +353,11 @@
           "title": "Long Run",
           "description": "Run 12 km at 7:00 min/km pace",
           "options": [
-            "Focus on a steady pace and enjoy the run ✨"
+            "Build your endurance and practice your nutrition and hydration strategy🍌",
+            "Long Run Pace: 7:00 min/km, with sections at marathon pace (6:30 min/km).",
+            "Add some rolling hills or varied terrain for strength building.",
+            "Focus on consistent pacing and energy management.",
+            "Tip: Use long runs to refine gear, nutrition, and hydration strategies for race day."
           ],
           "distance": 12
         },
@@ -345,7 +365,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day 🥳",
           "options": [],
           "distance": 0
         }
@@ -360,7 +380,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Rest. It's part of the plan 🛋️",
+          "description": "Rest. You need it 💡",
           "options": [],
           "distance": 0
         },
@@ -368,7 +388,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest. You need it 💡",
           "options": [],
           "distance": 0
         },
@@ -378,7 +398,7 @@
           "title": "Tempo Run",
           "description": "Run 6 km at 5:30 min/km pace",
           "options": [
-            "Maintain a challenging but sustainable pace 🥵"
+            "Tempo runs help you run faster for longer ⏩"
           ],
           "distance": 6
         },
@@ -397,7 +417,7 @@
           "description": "Run 4 intervals of 0.8 km at 5:00 min/km pace. Each interval is followed by 1:00 min rest at 6:30 min/km pace",
           "options": [
             "Total distance: 3.9 km",
-            "Improve your speed and running economy 🚀"
+            "Intervals help you run faster and more efficiently ✅"
           ],
           "distance": 3.9
         },
@@ -407,7 +427,11 @@
           "title": "Long Run",
           "description": "Run 15 km at 7:00 min/km pace",
           "options": [
-            "Long runs are key to your marathon success 🚀"
+            "Long runs are key to your marathon success 🚀",
+            "Long Run Pace: 7:00 min/km, with sections at marathon pace (6:30 min/km).",
+            "Add some rolling hills or varied terrain for strength building.",
+            "Focus on consistent pacing and energy management.",
+            "Tip: Hydrate and fuel appropriately during long runs to prepare for race day."
           ],
           "distance": 15
         },
@@ -415,7 +439,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest. It's part of the plan 🛋️",
+          "description": "Happy Rest Day 🥳",
           "options": [],
           "distance": 0
         }
@@ -430,7 +454,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         },
@@ -448,7 +472,7 @@
           "title": "Tempo Run",
           "description": "Run 6 km at 5:30 min/km pace",
           "options": [
-            "Maintain a challenging but sustainable pace 🥵"
+            "Boost your speed endurance and get comfortable with faster paces 🏃‍♀️"
           ],
           "distance": 6
         },
@@ -467,7 +491,7 @@
           "description": "Run 3 intervals of 1 km at 5:15 min/km pace. Each interval is followed by 1:00 min rest at 6:30 min/km pace",
           "options": [
             "Total distance: 3.5 km",
-            "Intervals help you run faster and more efficiently ✅"
+            "Focus on maintaining good form during each interval ✨"
           ],
           "distance": 3.5
         },
@@ -477,7 +501,11 @@
           "title": "Long Run",
           "description": "Run 18 km at 7:00 min/km pace",
           "options": [
-            "Long runs are key to your marathon success 🚀"
+            "Long runs are key to your marathon success 🚀",
+            "Long Run Pace: 7:00 min/km, with sections at marathon pace (6:30 min/km).",
+            "Add some rolling hills or varied terrain for strength building.",
+            "Focus on consistent pacing and energy management.",
+            "Tip: Hydrate and fuel appropriately during long runs to prepare for race day."
           ],
           "distance": 18
         },
@@ -485,7 +513,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest. You need it 💡",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         }
@@ -500,7 +528,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest. You need it 💡",
           "options": [],
           "distance": 0
         },
@@ -526,7 +554,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },
@@ -537,7 +565,7 @@
           "description": "Run 6 intervals of 0.4 km at 5:00 min/km pace. Each interval is followed by 2:00 min rest at 6:30 min/km pace",
           "options": [
             "Total distance: 4.4 km",
-            "Improve your speed and running economy 🚀"
+            "Intervals help you run faster and more efficiently ✅"
           ],
           "distance": 4.4
         },
@@ -547,7 +575,11 @@
           "title": "Long Run",
           "description": "Run 21 km at 7:00 min/km pace",
           "options": [
-            "Focus on a steady pace and enjoy the run ✨"
+            "Focus on a steady pace and enjoy the run ✨",
+            "Long Run Pace: 7:00 min/km, with sections at marathon pace (6:30 min/km).",
+            "Add some rolling hills or varied terrain for strength building.",
+            "Focus on consistent pacing and energy management.",
+            "Tip: Hydrate and fuel appropriately during long runs to prepare for race day."
           ],
           "distance": 21
         },
@@ -555,7 +587,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         }
@@ -570,7 +602,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         },
@@ -578,7 +610,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Rest. You need it 💡",
           "options": [],
           "distance": 0
         },
@@ -596,7 +628,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest. It's part of the plan 🛋️",
+          "description": "Happy Rest Day 🥳",
           "options": [],
           "distance": 0
         },
@@ -617,7 +649,11 @@
           "title": "Long Run",
           "description": "Run 25 km at 7:00 min/km pace",
           "options": [
-            "Focus on a steady pace and enjoy the run ✨"
+            "Long runs are key to your marathon success 🚀",
+            "Long Run Pace: 7:00 min/km, with sections at marathon pace (6:30 min/km).",
+            "Add some rolling hills or varied terrain for strength building.",
+            "Focus on consistent pacing and energy management.",
+            "Tip: Listen to your body and adjust pacing or effort if needed to avoid overtraining."
           ],
           "distance": 25
         },
@@ -625,7 +661,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day 🥳",
           "options": [],
           "distance": 0
         }
@@ -650,7 +686,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Rest. You need it 💡",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },
@@ -668,7 +704,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Rest. You need it 💡",
           "options": [],
           "distance": 0
         },
@@ -679,7 +715,7 @@
           "description": "Run 4 intervals of 0.8 km at 5:00 min/km pace. Each interval is followed by 1:00 min rest at 6:30 min/km pace",
           "options": [
             "Total distance: 3.9 km",
-            "Intervals help you run faster and more efficiently ✅"
+            "Improve your speed and running economy 🚀"
           ],
           "distance": 3.9
         },
@@ -689,7 +725,11 @@
           "title": "Long Run",
           "description": "Run 28 km at 7:00 min/km pace",
           "options": [
-            "Long runs are key to your marathon success 🚀"
+            "Focus on a steady pace and enjoy the run ✨",
+            "Long Run Pace: 7:00 min/km.",
+            "Incorporate marathon pace (6:30 min/km) into the latter portions of the run.",
+            "Simulate race conditions with gear, fueling, and pacing.",
+            "Tip: Listen to your body and adjust pacing or effort if needed to avoid overtraining."
           ],
           "distance": 28
         },
@@ -697,7 +737,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Happy Rest Day 🥳",
+          "description": "Rest. You need it 💡",
           "options": [],
           "distance": 0
         }
@@ -712,7 +752,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         },
@@ -720,7 +760,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Rest. It's part of the plan 🛋️",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },
@@ -738,7 +778,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         },
@@ -759,7 +799,11 @@
           "title": "Long Run",
           "description": "Run 32 km at 7:00 min/km pace",
           "options": [
-            "Long runs are key to your marathon success 🚀"
+            "Long runs are key to your marathon success 🚀",
+            "Long Run Pace: 7:00 min/km.",
+            "Incorporate marathon pace (6:30 min/km) into the latter portions of the run.",
+            "Simulate race conditions with gear, fueling, and pacing.",
+            "Tip: Use long runs to refine gear, nutrition, and hydration strategies for race day."
           ],
           "distance": 32
         },
@@ -782,7 +826,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Rest. It's part of the plan 🛋️",
+          "description": "Happy Rest Day 🥳",
           "options": [],
           "distance": 0
         },
@@ -790,7 +834,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         },
@@ -808,7 +852,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Rest. You need it 💡",
           "options": [],
           "distance": 0
         },
@@ -829,7 +873,11 @@
           "title": "Long Run",
           "description": "Run 36 km at 7:00 min/km pace",
           "options": [
-            "Focus on a steady pace and enjoy the run ✨"
+            "Focus on a steady pace and enjoy the run ✨",
+            "Long Run Pace: 7:00 min/km.",
+            "Incorporate marathon pace (6:30 min/km) into the latter portions of the run.",
+            "Simulate race conditions with gear, fueling, and pacing.",
+            "Tip: Hydrate and fuel appropriately during long runs to prepare for race day."
           ],
           "distance": 36
         },
@@ -837,7 +885,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest. It's part of the plan 🛋️",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         }
@@ -854,7 +902,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day 🥳",
           "options": [],
           "distance": 0
         },
@@ -862,7 +910,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Happy Rest Day 🥳",
           "options": [],
           "distance": 0
         },
@@ -872,7 +920,7 @@
           "title": "Tempo Run",
           "description": "Run 7 km at 5:30 min/km pace",
           "options": [
-            "Tempo runs help you run faster for longer ⏩"
+            "Boost your speed endurance and get comfortable with faster paces 🏃‍♀️"
           ],
           "distance": 7
         },
@@ -880,7 +928,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest. You need it 💡",
+          "description": "Happy Rest Day 🥳",
           "options": [],
           "distance": 0
         },
@@ -901,7 +949,7 @@
           "title": "Long Run",
           "description": "Run 24 km at 7:00 min/km pace",
           "options": [
-            "Build your endurance and practice your nutrition and hydration strategy🍌"
+            "Focus on a steady pace and enjoy the run ✨"
           ],
           "distance": 24
         },
@@ -909,7 +957,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest. You need it 💡",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         }
@@ -924,7 +972,7 @@
           "day": 0,
           "label": "Monday",
           "title": "Rest Day",
-          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
+          "description": "Rest. You need it 💡",
           "options": [],
           "distance": 0
         },
@@ -942,7 +990,7 @@
           "title": "Tempo Run",
           "description": "Run 7 km at 5:30 min/km pace",
           "options": [
-            "Tempo runs help you run faster for longer ⏩"
+            "Boost your speed endurance and get comfortable with faster paces 🏃‍♀️"
           ],
           "distance": 7
         },
@@ -950,7 +998,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest. You need it 💡",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         },
@@ -971,7 +1019,7 @@
           "title": "Long Run",
           "description": "Run 20 km at 7:00 min/km pace",
           "options": [
-            "Long runs are key to your marathon success 🚀"
+            "Focus on a steady pace and enjoy the run ✨"
           ],
           "distance": 20
         },
@@ -979,7 +1027,7 @@
           "day": 6,
           "label": "Sunday",
           "title": "Rest Day",
-          "description": "Rest. It's part of the plan 🛋️",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         }
@@ -1002,7 +1050,7 @@
           "day": 1,
           "label": "Tuesday",
           "title": "Rest Day",
-          "description": "Rest. You need it 💡",
+          "description": "Rest. It's part of the plan 🛋️",
           "options": [],
           "distance": 0
         },
@@ -1012,7 +1060,7 @@
           "title": "Tempo Run",
           "description": "Run 7 km at 5:30 min/km pace",
           "options": [
-            "Maintain a challenging but sustainable pace 🥵"
+            "Boost your speed endurance and get comfortable with faster paces 🏃‍♀️"
           ],
           "distance": 7
         },
@@ -1020,7 +1068,7 @@
           "day": 3,
           "label": "Thursday",
           "title": "Rest Day",
-          "description": "Rest. It's part of the plan 🛋️",
+          "description": "Rest and recovery don't need to be earned - they are a prerequisite for your performance",
           "options": [],
           "distance": 0
         },

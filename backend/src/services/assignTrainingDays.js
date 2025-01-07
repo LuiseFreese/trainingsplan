@@ -131,7 +131,7 @@ const assignTrainingDays = (weekPlan, weeklyDistance, phase, week, paces, traini
         const restDistance = restTimeInMinutes / parseFloat(paces.easy.split(' ')[0]);
         const totalIntervalDistance = intervalTemplate.intervals * intervalTemplate.distance + intervalTemplate.intervals * restDistance;
         distance = Math.round(totalIntervalDistance * 10) / 10; // Round to 1 decimal place
-        description = `Run ${intervalTemplate.intervals} intervals of ${intervalTemplate.distance} km at ${intervalPace} pace. Each interval is followed by ${intervalTemplate.rest} rest at ${paces.easy} pace`;
+        description = `Run ${intervalTemplate.intervals} intervals of ${intervalTemplate.distance} km at ${intervalPace} pace. Each interval is followed by ${intervalTemplate.rest} recovery at ${paces.easy} pace`;
         options.push(`Total distance: ${distance} km`);
         options.push(getRandomPhrase(intervalPhrases));
         title = 'Intervals';

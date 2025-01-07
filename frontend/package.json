@@ -11,12 +11,16 @@
     "@mui/x-date-pickers": "^7.23.3",
     "cra-template": "1.2.0",
     "date-fns": "^2.29.3",
+    "file-saver": "^2.0.5",
+    "ics": "^3.8.1",
+    "luxon": "^3.5.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
+    "prebuild": "node scripts/copyData.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
