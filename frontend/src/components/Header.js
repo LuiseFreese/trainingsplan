@@ -1,11 +1,12 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Button } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
+import '../App.css';
 
 const Header = ({ handleFileUpload, handleExportClick, plan, fileName, handleDeleteFile }) => (
-  <AppBar position="static" style={{ background: 'none', boxShadow: 'none' }}>
+  <AppBar position="static" className="app-bar">
     <Toolbar>
-      <Typography variant="h6" style={{ flexGrow: 1 }}>
+      <Typography variant="h6" className="toolbar-title">
         Marathon Training Plan
       </Typography>
       <input
@@ -16,21 +17,22 @@ const Header = ({ handleFileUpload, handleExportClick, plan, fileName, handleDel
         onChange={handleFileUpload}
       />
       <label htmlFor="upload-file">
-        <Button variant="outlined" style={{ borderColor: '#ff69b4', color: '#ff69b4', marginRight: '10px' }} component="span">
+        <Button variant="outlined" className="upload-button" component="span">
           Upload Plan
         </Button>
       </label>
       {fileName && (
-        <div style={{ display: 'flex', alignItems: 'center', marginRight: '10px' }}>
-          <Typography variant="body1" style={{ marginRight: '10px' }}>
+        <div className="file-info">
+          <Typography variant="body1" className="file-name">
             {fileName}
           </Typography>
-          <IconButton style={{ color: '#ff69b4' }} onClick={handleDeleteFile}>
+          <IconButton className="delete-icon" onClick={handleDeleteFile}>
             <DeleteIcon />
           </IconButton>
         </div>
       )}
-      <Button variant="outlined" style={{ borderColor: '#ff69b4', color: '#ff69b4' }} onClick={handleExportClick} disabled={!plan}>
+      {!fileName && <div style={{ marginRight: '10px' }}></div>} {/* Add margin when no file is uploaded */}
+      <Button variant="outlined" className="export-button" onClick={handleExportClick} disabled={!plan}>
         Export to Calendar
       </Button>
     </Toolbar>

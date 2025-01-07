@@ -53,3 +53,89 @@
 .day-card:hover {
   box-shadow: 0 4px 8px 0 rgba(255, 105, 180, 0.2), 0 6px 20px 0 rgba(255, 105, 180, 0.19);
 }
+
+/* .day-card {
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.day-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+
+/* Ensure this is included in App.css */
+.app-bar {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.toolbar-title {
+  flex-grow: 1;
+}
+
+.upload-button {
+  border-color: #ff69b4;
+  color: #ff69b4;
+  margin-right: 10px; /* Add margin to the right */
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; /* Add margin to the left */
+}
+
+.file-name {
+  margin-right: 10px; /* Add margin to the right */
+}
+
+.delete-icon {
+  color: #ff69b4 !important; /* Ensure the color is applied */
+}
+
+.export-button {
+  border-color: #ff69b4;
+  color: #ff69b4;
+  margin-left: 10px; /* Add margin to the left */
+}
+
+.generate-button {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-item {
+  margin-top: 16px;
+}
+
+.date-picker-container {
+  margin-bottom: 16px; /* Add margin to the bottom */
+}
+
+.training-plan-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.week-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+
+.week-card {
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.week-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

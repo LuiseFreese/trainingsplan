@@ -75,22 +75,24 @@ function App() {
             fileName={fileName}
             handleDeleteFile={handleDeleteFile}
           />
-          <TrainingPlanForm
-            fitnessLevel={fitnessLevel}
-            setFitnessLevel={setFitnessLevel}
-            targetTime={targetTime}
-            setTargetTime={setTargetTime}
-            trainingDays={trainingDays}
-            setTrainingDays={setTrainingDays}
-            startDate={startDate}
-            setStartDate={setStartDate}
-          />
-          <Grid item xs={12} style={{ marginTop: '16px' }}>
+          <div className="date-picker-container">
+            <TrainingPlanForm
+              fitnessLevel={fitnessLevel}
+              setFitnessLevel={setFitnessLevel}
+              targetTime={targetTime}
+              setTargetTime={setTargetTime}
+              trainingDays={trainingDays}
+              setTrainingDays={setTrainingDays}
+              startDate={startDate}
+              setStartDate={setStartDate}
+            />
+          </div>
+          <Grid item xs={12} className="grid-item">
             <Button
               variant="contained"
               color="primary"
               onClick={handleGeneratePlanClick}
-              style={{ boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}
+              className="generate-button"
               disabled={!!uploadedPlan} // Disable if there is an uploaded plan
             >
               Generate Plan
