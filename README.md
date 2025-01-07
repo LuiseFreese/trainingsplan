@@ -9,6 +9,7 @@ This application generates a marathon training plan based on the user's target t
 3. Includes different types of training sessions: long runs, tempo runs, interval training, easy runs, yoga, and rest days
 4. Export the training plan as an ICS file
 5. Modals for long runs and yoga days with detailed instructions
+6. Upload a JSON file with a pre-defined training plan and display it in the UI
 
 ## Installation
 
