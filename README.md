@@ -9,7 +9,9 @@ This application generates a marathon training plan based on the user's target t
 3. Includes different types of training sessions: long runs, tempo runs, interval training, easy runs, yoga, and rest days
 4. Export the training plan as an ICS file
 5. Modals for long runs and yoga days with detailed instructions
-6. Upload a JSON file with a pre-defined training plan and display it in the UI
+6. Upload a JSON file with a pre-defined training plan and display it in the UI\
+7. Download a JSON template for creating a custom training plan
+8. View instructions for filling out the JSON template
 
 ## Installation
 
@@ -46,8 +48,23 @@ npm start
 
 * Open the application in your browser at http://localhost:3000
 * Select your fitness level, target time, and preferred training days
-* Select **Generate Plan** to create your customized marathon training plan
-* Select **Export to calendar** to create an .ics file download that you can import into Outlook
+* Select Generate Plan to create your customized marathon training plan
+* Select Export to calendar to create an .ics file download that you can import into Outlook
+* Alternatively, upload a JSON file with a pre-defined training plan to display it in the UI and export it to the calendar
+
+### Downloading a JSON Template
+
+* Select the **Upload Plan** button
+* Select **Download JSON Template** from the dropdown menu
+* The template will be downloaded to your computer
+
+### Instructions for Uploading a Custom Plan
+
+* Select the **Upload Plan** button
+* Select **Instructions to Fill Your Template** from the dropdown menu
+* Follow the instructions provided in the modal to fill out the JSON template
+* Save the filled template on your computer
+* Select the **Upload Plan** button again and select the filled JSON file to upload it
 
 ## Training Plan Logic
 
