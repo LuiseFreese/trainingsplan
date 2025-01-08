@@ -6,6 +6,7 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import theme from './theme';
 import YogaFlowModal from './components/YogaFlowModal';
 import LongRunModal from './components/LongRunModal';
+import InstructionsModal from './components/InstructionsModal';
 import { handleGeneratePlan } from './utils/handleGeneratePlan';
 import Header from './components/Header';
 import TrainingPlanForm from './components/TrainingPlanForm';
@@ -23,6 +24,7 @@ function App() {
   const [generatedPlan, setGeneratedPlan] = useState(null);
   const [uploadedPlan, setUploadedPlan] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
+  const [instructionsOpen, setInstructionsOpen] = useState(false);
   const [selectedYogaFlow, setSelectedYogaFlow] = useState(null);
   const [longRunModalOpen, setLongRunModalOpen] = useState(false);
   const [longRunAdvice, setLongRunAdvice] = useState(null);
@@ -61,6 +63,23 @@ function App() {
     handleGeneratePlan(targetTime, fitnessLevel, trainingDays, setGeneratedPlan);
   };
 
+  const handleDownloadTemplate = () => {
+    const link = document.createElement('a');
+    link.href = `${process.env.PUBLIC_URL}/template.json`;
+    link.download = 'template.json';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleOpenInstructions = () => {
+    setInstructionsOpen(true);
+  };
+
+  const handleCloseInstructions = () => {
+    setInstructionsOpen(false);
+  };
+
   const activePlan = uploadedPlan || generatedPlan;
   const isGeneratedPlan = !!generatedPlan;
 
@@ -74,6 +93,8 @@ function App() {
             plan={activePlan}
             fileName={fileName}
             handleDeleteFile={handleDeleteFile}
+            handleDownloadTemplate={handleDownloadTemplate}
+            handleOpenInstructions={handleOpenInstructions}
           />
           <div className="date-picker-container">
             <TrainingPlanForm
@@ -101,6 +122,7 @@ function App() {
           {activePlan && <TrainingPlan plan={activePlan} handleCardClick={handleCardClickWrapper} />}
           <YogaFlowModal open={modalOpen} handleClose={handleCloseYogaModal} yogaFlow={selectedYogaFlow} disabled={!isGeneratedPlan} />
           <LongRunModal open={longRunModalOpen} handleClose={handleCloseLongRunModal} advice={longRunAdvice} generalTip={generalTip} disabled={!isGeneratedPlan} />
+          <InstructionsModal open={instructionsOpen} handleClose={handleCloseInstructions} />
         </Container>
       </LocalizationProvider>
     </ThemeProvider>
